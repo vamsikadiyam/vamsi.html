@@ -1,0 +1,1420 @@
+
+<!DOCTYPE html>
+<!--[if IE 9 ]>    <html class="ie ie9 ie-lt10 no-js" lang="en-US" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if gt IE 9]><!--><html class="no-js" lang="en-US" prefix="og: http://ogp.me/ns#"><!--<![endif]-->
+<!-- the "no-js" class is for Modernizr. --> 
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="https://codepilot.ai/wp-content/themes/stash/highgrade/images/favicon.png" rel="icon">
+<link href="https://codepilot.ai/wp-content/themes/stash/highgrade/images/favicon.png" rel="apple-touch-icon">
+<link href="https://codepilot.ai/wp-content/themes/stash/highgrade/images/favicon.png" rel="apple-touch-icon" sizes="76x76" />
+<link href="https://codepilot.ai/wp-content/themes/stash/highgrade/images/favicon.png" rel="apple-touch-icon" sizes="120x120" />
+<link href="https://codepilot.ai/wp-content/themes/stash/highgrade/images/favicon.png" rel="apple-touch-icon" sizes="152x152" />
+
+<link rel="pingback" href="https://codepilot.ai/xmlrpc.php">
+
+<title>CodePilot.ai</title>
+                        <script>
+                            /* You can add more configuration options to webfontloader by previously defining the WebFontConfig with your options */
+                            if ( typeof WebFontConfig === "undefined" ) {
+                                WebFontConfig = new Object();
+                            }
+                            WebFontConfig['google'] = {families: ['Open+Sans:400,600', 'Roboto+Slab:400', 'Roboto+Condensed:700', 'Source+Sans+Pro:300', 'Montserrat:500,400', 'Roboto:400,500&subset=latin']};
+
+                            (function() {
+                                var wf = document.createElement( 'script' );
+                                wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.5.3/webfont.js';
+                                wf.type = 'text/javascript';
+                                wf.async = 'true';
+                                var s = document.getElementsByTagName( 'script' )[0];
+                                s.parentNode.insertBefore( wf, s );
+                            })();
+                        </script>
+                        
+<!-- This site is optimized with the Yoast SEO Premium plugin v7.6.1 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description" content="CodePilot.ai: The code search application designed for developers, by developers. Find faster, better solutions from GitHub, Stack Overflow, private code bases, custom data sources, and anywhere else code lives. Get answers at your fingertips, so you can focus on what really matters."/>
+<link rel="canonical" href="https://codepilot.ai/" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="CodePilot.ai" />
+<meta property="og:description" content="CodePilot.ai: The code search application designed for developers, by developers. Find faster, better solutions from GitHub, Stack Overflow, private code bases, custom data sources, and anywhere else code lives. Get answers at your fingertips, so you can focus on what really matters." />
+<meta property="og:url" content="https://codepilot.ai/" />
+<meta property="og:site_name" content="CodePilot.ai" />
+<meta property="og:image" content="https://codepilot.ai/wp-content/uploads/2018/02/logo-black-side-1024x238.png" />
+<meta property="og:image:secure_url" content="https://codepilot.ai/wp-content/uploads/2018/02/logo-black-side-1024x238.png" />
+<meta property="og:image:width" content="1024" />
+<meta property="og:image:height" content="238" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:description" content="CodePilot.ai: The code search application designed for developers, by developers. Find faster, better solutions from GitHub, Stack Overflow, private code bases, custom data sources, and anywhere else code lives. Get answers at your fingertips, so you can focus on what really matters." />
+<meta name="twitter:title" content="CodePilot.ai" />
+<meta name="twitter:site" content="@codepilotai" />
+<meta name="twitter:image" content="https://codepilot.ai/wp-content/uploads/2018/02/logo-black-side.png" />
+<meta name="twitter:creator" content="@codepilotai" />
+<script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"WebSite","@id":"#website","url":"https:\/\/codepilot.ai\/","name":"CodePilot.ai","potentialAction":{"@type":"SearchAction","target":"https:\/\/codepilot.ai\/?s={search_term_string}","query-input":"required name=search_term_string"}}</script>
+<script type='application/ld+json'>{"@context":"https:\/\/schema.org","@type":"Organization","url":"https:\/\/codepilot.ai\/","sameAs":["http:\/\/facebook.com\/codepilotai","https:\/\/pk.linkedin.com\/company\/codepilot.ai","https:\/\/www.youtube.com\/channel\/UCndSXAZebexUAT1bvBI3DBA","https:\/\/twitter.com\/codepilotai"],"@id":"https:\/\/codepilot.ai\/#organization","name":"CodePilot.ai","logo":"https:\/\/codepilot.ai\/wp-content\/uploads\/2018\/02\/logo-black-bottom.png"}</script>
+<!-- / Yoast SEO Premium plugin. -->
+
+<link rel='dns-prefetch' href='//fonts.googleapis.com' />
+<link rel='dns-prefetch' href='//s.w.org' />
+<link rel="alternate" type="application/rss+xml" title="CodePilot.ai &raquo; Feed" href="https://codepilot.ai/feed/" />
+<link rel="alternate" type="application/rss+xml" title="CodePilot.ai &raquo; Comments Feed" href="https://codepilot.ai/comments/feed/" />
+<!-- This site uses the Google Analytics by MonsterInsights plugin v7.0.17 - Using Analytics tracking - https://www.monsterinsights.com/ -->
+<script type="text/javascript" data-cfasync="false">
+	var mi_track_user      = true;
+	var mi_no_track_reason = '';
+	
+	var disableStr = 'ga-disable-UA-83428676-1';
+
+	/* Function to detect opted out users */
+	function __gaTrackerIsOptedOut() {
+		return document.cookie.indexOf(disableStr + '=true') > -1;
+	}
+
+	/* Disable tracking if the opt-out cookie exists. */
+	if ( __gaTrackerIsOptedOut() ) {
+		window[disableStr] = true;
+	}
+
+	/* Opt-out function */
+	function __gaTrackerOptout() {
+	  document.cookie = disableStr + '=true; expires=Thu, 31 Dec 2099 23:59:59 UTC; path=/';
+	  window[disableStr] = true;
+	}
+	
+	if ( mi_track_user ) {
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+			(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+			m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','//www.google-analytics.com/analytics.js','__gaTracker');
+
+		__gaTracker('create', 'UA-83428676-1', 'auto', {'useAmpClientId':true});
+		__gaTracker('set', 'forceSSL', true);
+		__gaTracker('require', 'displayfeatures');
+		__gaTracker('require', 'linkid', 'linkid.js');
+		__gaTracker('send','pageview', location.pathname + location.search + location.hash);
+	} else {
+		console.log( "" );
+		(function() {
+			/* https://developers.google.com/analytics/devguides/collection/analyticsjs/ */
+			var noopfn = function() {
+				return null;
+			};
+			var noopnullfn = function() {
+				return null;
+			};
+			var Tracker = function() {
+				return null;
+			};
+			var p = Tracker.prototype;
+			p.get = noopfn;
+			p.set = noopfn;
+			p.send = noopfn;
+			var __gaTracker = function() {
+				var len = arguments.length;
+				if ( len === 0 ) {
+					return;
+				}
+				var f = arguments[len-1];
+				if ( typeof f !== 'object' || f === null || typeof f.hitCallback !== 'function' ) {
+					console.log( 'Not running function __gaTracker(' + arguments[0] + " ....) because you are not being tracked. " + mi_no_track_reason );
+					return;
+				}
+				try {
+					f.hitCallback();
+				} catch (ex) {
+
+				}
+			};
+			__gaTracker.create = function() {
+				return new Tracker();
+			};
+			__gaTracker.getByName = noopnullfn;
+			__gaTracker.getAll = function() {
+				return [];
+			};
+			__gaTracker.remove = noopfn;
+			window['__gaTracker'] = __gaTracker;
+					})();
+		}
+</script>
+<!-- / Google Analytics by MonsterInsights -->
+
+<!-- MonsterInsights Ads Tracking -->
+<script type="text/javascript">
+window.google_analytics_uacct = 'UA-83428676-1';
+
+</script>
+<!-- End MonsterInsights Ads Tracking -->
+
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/2.4\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/codepilot.ai\/wp-includes\/js\/wp-emoji-release.min.js"}};
+			!function(a,b,c){function d(a,b){var c=String.fromCharCode;l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,a),0,0);var d=k.toDataURL();l.clearRect(0,0,k.width,k.height),l.fillText(c.apply(this,b),0,0);var e=k.toDataURL();return d===e}function e(a){var b;if(!l||!l.fillText)return!1;switch(l.textBaseline="top",l.font="600 32px Arial",a){case"flag":return!(b=d([55356,56826,55356,56819],[55356,56826,8203,55356,56819]))&&(b=d([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]),!b);case"emoji":return b=d([55357,56692,8205,9792,65039],[55357,56692,8203,9792,65039]),!b}return!1}function f(a){var c=b.createElement("script");c.src=a,c.defer=c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var g,h,i,j,k=b.createElement("canvas"),l=k.getContext&&k.getContext("2d");for(j=Array("flag","emoji"),c.supports={everything:!0,everythingExceptFlag:!0},i=0;i<j.length;i++)c.supports[j[i]]=e(j[i]),c.supports.everything=c.supports.everything&&c.supports[j[i]],"flag"!==j[i]&&(c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&c.supports[j[i]]);c.supports.everythingExceptFlag=c.supports.everythingExceptFlag&&!c.supports.flag,c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.everything||(h=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",h,!1),a.addEventListener("load",h,!1)):(a.attachEvent("onload",h),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),g=c.source||{},g.concatemoji?f(g.concatemoji):g.wpemoji&&g.twemoji&&(f(g.twemoji),f(g.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='contact-form-7-css'  href='https://codepilot.ai/wp-content/plugins/contact-form-7/includes/css/styles.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cookie-notice-front-css'  href='https://codepilot.ai/wp-content/plugins/cookie-notice/css/front.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='cs-remove-version-number-from-css-js-css'  href='https://codepilot.ai/wp-content/plugins/cs-remove-version-number-from-css-js/public/css/cs-remove-version-number-from-css-js-public.css' type='text/css' media='all' />
+<link rel='stylesheet' id='essential-grid-plugin-settings-css'  href='https://codepilot.ai/wp-content/plugins/essential-grid/public/assets/css/settings.css' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-open-sans-css'  href='https://fonts.googleapis.com/css?family=Open+Sans%3A300%2C400%2C600%2C700%2C800' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-raleway-css'  href='https://fonts.googleapis.com/css?family=Raleway%3A100%2C200%2C300%2C400%2C500%2C600%2C700%2C800%2C900' type='text/css' media='all' />
+<link rel='stylesheet' id='tp-droid-serif-css'  href='https://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C700' type='text/css' media='all' />
+<link rel='stylesheet' id='parent-style-css'  href='https://codepilot.ai/wp-content/themes/stash/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='stash_icons-css'  href='https://codepilot.ai/wp-content/themes/stash/highgrade/css/icons.css' type='text/css' media='all' />
+<link rel='stylesheet' id='font-awesome-css'  href='https://codepilot.ai/wp-content/plugins/js_composer/assets/lib/bower/font-awesome/css/font-awesome.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='stash_css_component-css'  href='https://codepilot.ai/wp-content/themes/stash/highgrade/css/component.css' type='text/css' media='all' />
+<link rel='stylesheet' id='lity-css'  href='https://codepilot.ai/wp-content/themes/stash/highgrade/css/lity.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='stash_style-css'  href='https://codepilot.ai/wp-content/themes/stash-child/style.css' type='text/css' media='all' />
+<link rel='stylesheet' id='js_composer_front-css'  href='https://codepilot.ai/wp-content/plugins/js_composer/assets/css/js_composer.min.css' type='text/css' media='all' />
+<link rel='stylesheet' id='googleFonts-css'  href='https://fonts.googleapis.com/css?family=Montserrat' type='text/css' media='all' />
+<link rel='stylesheet' id='stash_custom-styles-css'  href='https://codepilot.ai/wp-content/themes/stash/custom-styles.css' type='text/css' media='all' />
+<style id='stash_custom-styles-inline-css' type='text/css'>
+#hgr_sections{background-color:#fff;}#website_boxed{margin:auto;overflow:hidden;width:100vw;max-width:100%;}#hgr_top_navbar_container{position:fixed;}.noPaddingTopBottom{padding-top:0 !important;padding-bottom:0 !important;}#hgr_top_navbar_container .container{-webkit-transition:all .5s;-moz-transition:all .5s;-ms-transition:all .5s;-o-transition:all .5s;transition:all .5s;}img.responsiveLogo{max-width:100%;max-height:100%;vertical-align:unset !important;}.hgr_identity a{max-width:100%;max-height:100%;}a.underline.after.first:after{border-bottom:2px solid #ef9337;}.loader{font-size:5px;margin:auto;text-indent:-9999em;width:11em;height:11em;border-radius:50%;background:#ef9337;background:-moz-linear-gradient(left,#ef9337 10%,rgba(255,255,255,0) 42%);background:-webkit-linear-gradient(left,#ef9337 10%,rgba(255,255,255,0) 42%);background:-o-linear-gradient(left,#ef9337 10%,rgba(255,255,255,0) 42%);background:-ms-linear-gradient(left,#ef9337 10%,rgba(255,255,255,0) 42%);background:linear-gradient(to right,#ef9337 10%,rgba(255,255,255,0) 42%);position:relative;-webkit-animation:load3 1.4s infinite linear;animation:load3 1.4s infinite linear;-webkit-transform:translateZ(0);-ms-transform:translateZ(0);transform:translateZ(0);}.loader:before{width:50%;height:50%;background:#ef9337;border-radius:100% 0 0 0;position:absolute;top:0;left:0;content:&#039;&#039;;}.lity{background:#ef9337;background:rgba(239,147,55,0.9);}.light-scheme a.link-curtain::before{border-top:2px solid #222f2f;}.light-scheme a.link-curtain::after{background:rgba(34,47,47,0.1);}.dark-scheme a.link-curtain::before{border-top:2px solid #fff;}.dark-scheme a.link-curtain::after{background:rgba(255,255,255,0.1);}#hgr_top_navbar_container .dropdown-menu li a:hover{background-color:rgba(239,147,55,0.1);}#fixed_navbar .dropdown-menu li a:hover{background-color:rgba(255,255,255,0.15);}#hgr_top_navbar_container .dropdown-menu{border-top:2px solid #ef9337 !important;}.fakeMobile #hgr_top_navbar_container .dropdown-menu,.isMobile.isDesktop #hgr_top_navbar_container .dropdown-menu{border-top:0 !important;}.fakeMobile #hgr_top_navbar_container .dropdown-menu li.dropdown-submenu ul li,.isMobile.isDesktop #hgr_top_navbar_container .dropdown-menu li.dropdown-submenu ul li{padding-left:20px;}#fixed_navbar .dropdown-menu{border-top:2px solid #fff !important;}.page-template-page-leftsidebar .vc_col-sm-3 ul li,.page-template-page-rightsidebar .vc_col-sm-3 ul li,.page-template-page-leftsidebar .vc_col-sm-3 ul.children li,.page-template-page-rightsidebar .vc_col-sm-3 ul.children li,.shop_widget ul li{border-left:solid 6px rgba(239,147,55,0.3);}.page-template-page-leftsidebar .vc_col-sm-3  ul li:hover,.page-template-page-rightsidebar .vc_col-sm-3 ul li:hover,.shop_widget ul li:hover{border-left:solid 6px #ef9337;background-color:rgba(239,147,55,0.05);}.page-template-page-leftsidebar #wp-calendar caption,.page-template-page-rightsidebar #wp-calendar caption{color:#ef9337;}.page-template-page-leftsidebar #wp-calendar thead,.page-template-page-rightsidebar #wp-calendar thead{background:rgba(239,147,55,0.05);}.page-template-page-leftsidebar #wp-calendar tbody td:hover,.page-template-page-rightsidebar #wp-calendar tbody td:hover{background:rgba(239,147,55,0.08);}.price_slider_wrapper .ui-slider-horizontal{background-color:rgba(239,147,55,0.2);}.price_slider_wrapper .ui-slider .ui-slider-range,.price_slider_wrapper .ui-slider .ui-slider-handle{background:#ef9337;}.woocommerce ul.products li.product,.woocommerce-page ul.products li.product{width:22.5% !important;}.wpcf7 input[type=text],.wpcf7 input[type=email],.wpcf7 textarea,.wpcf7 input[type=submit]{border-radius:0;}.woocommerce #content div.product form.cart .button,.woocommerce div.product form.cart .button,.woocommerce-page #content div.product form.cart .button,.woocommerce-page div.product form.cart .button{background-color:#000;padding-left:30px !important;padding-right:30px !important;}.woocommerce #content div.product form.cart .button:hover,.woocommerce div.product form.cart .button:hover,.woocommerce-page #content div.product form.cart .button:hover,.woocommerce-page div.product form.cart .button:hover{background-color:#000;padding-left:30px !important;padding-right:30px !important;}.woocommerce #respond input#submit.alt,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt{color:#fff;}.woocommerce #respond input#submit.alt,.woocommerce a.button.alt,.woocommerce button.button.alt,.woocommerce input.button.alt:hover{color:#fff;}.qcv_button_cart{background-color:;}.qcv_button_cart:hover{background-color:;}.qcv_button_checkout{background-color:#1c46f2;}.qcv_button_checkout:hover{background-color:#1c46f2;}#comments-form input[type=submit],#commentform input[type=submit]{background-color:#292929;}#comments-form input[type=submit]:hover,#commentform input[type=submit]:hover{background-color:#1c46f2;}.back-to-top{width:30px;height:30px;line-height:30px;}.woocommerce .product span.onsale{padding:8px 10px;border-radius:4px;}.blogGridItem .post_format-post-format-quote{background-color:rgba(239,147,55,0.8) !important;color:#fff;}.blogGridItem .post_format-post-format-quote .fa{color:#ef9337;margin-top:0;}#metroGridItems .postEntry{margin:10px !important;padding:10px !important;background-color:#ef9337;}@media (max-width: 479px){.fixed_menu,.main_navbar_container{display:none;}.container,#container{max-width:300px;}.container:before,.container:after,#container:before,#container:after{content:&quot; &quot;;display:table;}.container:after,#container:after{clear:both;}.megamenu{width:100%;}.standAlonePage .page_title_container .container{margin-top:60px;}#main_navbar_container,#main_navbar_container_left,.hgr_woo_minicart{display:none;}.central_logo .hgr_identity{float:left;margin:0;text-align:left;}#website_boxed{width:100vw;max-width:100%;}#website_boxed:before,#website_boxed:after{content:&quot; &quot;;display:table;}#website_boxed:after{clear:both;}#qcv_handle{position:absolute;top:22px;right:70px;}#fssearch_container #searchform input[type=text]{font-size:50px !important;height:100px !important;}#hgr_mc_name,#hgr_mc_lastname,#hgr_mc_email,.hgr_mc_btn{width:100% !important;margin-bottom:10px !important;}#comments .depth-2,#comments .depth-3,#comments .depth-4,#comments .depth-5,#comments .depth-6,#comments .depth-7,#comments .depth-8,#comments .depth-9,#comments .depth-10{margin-left:0;}.woocommerce .product span.onsale{top:10px !important;right:10px !important;left:auto !important;}.hgr_main_image{float:none;width:300px;margin-bottom:20px;}.hgr_product_thumbnails{width:300px;max-height:240px;float:none;overflow:hidden;}.hgr_product_thumbnails a{margin-right:10px;}.hgr_product_thumbnails a:last-child{margin-right:0;}.hgr_product_thumbnails img{max-width:90px !important;height:auto;}.woocommerce-page div.product div.summary{width:300px;height:auto;margin-right:auto;margin-left:auto;}.woocommerce-page div.product div.summary p{text-align:justify;}.woocommerce-page div.product .product_title{text-align:center;}.woocommerce div.product .woocommerce-product-rating{float:right;}.woocommerce div.product form.cart .button{margin-top:0 !important;}.woocommerce div.product .product_meta .posted_in{padding:0 !important;}#tab-description{text-align:justify;}.woocommerce #respond input#submit{width:100%;}.woocommerce p.stars{font-size:0.9em;}.woocommerce p.stars span{display:block;text-align:center;}.woocommerce .related ul.products li.product,.woocommerce .related ul li.product{width:48% !important;}.woocommerce .related ul.products li.product a,.woocommerce-page .related ul.products li.product a{left:35%;bottom:125px;}.woocommerce a.button,.woocommerce-page a.button{margin-top:0px !important;left:10px !important;top:10px !important;}.woocommerce ul.products li.product,.woocommerce-page ul.products li.product{width:100% !important;}}@media (min-width: 480px) and (max-width: 479px){.fixed_menu,.main_navbar_container{display:none;}.container,#container{max-width:440px;}.container:before,.container:after,#container:before,#container:after{content:&quot; &quot;;display:table;}.container:after,#container:after{clear:both;}.megamenu{width:100%;}#website_boxed{width:100vw;max-width:100%;}#website_boxed:before,#website_boxed:after{content:&quot; &quot;;display:table;}#website_boxed:after{clear:both;}#main_navbar_container,#main_navbar_container_left,.hgr_woo_minicart{display:none;}.central_logo .hgr_identity{float:left;margin:0;text-align:left;}#qcv_handle{position:absolute;top:22px;right:70px;}#fssearch_container #searchform input[type=text]{font-size:50px !important;height:100px !important;}#hgr_mc_name,#hgr_mc_lastname,#hgr_mc_email,.hgr_mc_btn{width:100% !important;margin-bottom:10px !important;}#comments .depth-2,#comments .depth-3,#comments .depth-4,#comments .depth-5,#comments .depth-6,#comments .depth-7,#comments .depth-8,#comments .depth-9,#comments .depth-10{margin-left:0;}.woocommerce .product span.onsale{top:10px !important;right:10px !important;left:auto !important;}.hgr_main_image{float:right;width:360px;margin-bottom:20px;}.hgr_product_thumbnails{width:70px;max-height:240px;float:left;overflow:hidden;}.hgr_product_thumbnails a{margin-right:10px;}.hgr_product_thumbnails a:last-child{margin-right:0;}.hgr_product_thumbnails img{max-width:70px !important;height:auto;}.woocommerce-page div.product div.summary{width:440px !important;height:auto;float:left !important;}.woocommerce-page div.product div.summary p{text-align:justify;}.woocommerce-page div.product .product_title{text-align:center;}.woocommerce div.product .woocommerce-product-rating{float:right;}.woocommerce div.product form.cart .button{margin-top:0 !important;}.woocommerce div.product .product_meta .posted_in{padding:0 !important;}#tab-description{text-align:justify;}.woocommerce #respond input#submit{width:100%;}.woocommerce p.stars{font-size:0.9em;}.woocommerce p.stars span{display:block;text-align:center;}.woocommerce .related ul.products li.product,.woocommerce .related ul li.product,.woocommerce .related li.product:nth-child(2n){width:32% !important;clear:none !important;margin-left:2px;margin-right:2px;text-align:center;float:left !important;}.woocommerce .related ul.products li.product a,.woocommerce-page .related ul.products li.product a{left:37%;top:-12px;}.woocommerce a.button,.woocommerce-page a.button{margin-top:0px !important;left:10px !important;top:10px !important;}.woocommerce ul.products li.product,.woocommerce-page ul.products li.product{width:100% !important;}}@media (min-width: 480px) and (max-width: 599px){.fixed_menu,.main_navbar_container{display:none;}.container,#container{max-width:600px;}.container:before,.container:after,#container:before,#container:after{content:&quot; &quot;;display:table;}.container:after,#container:after{clear:both;}.megamenu{width:100%;}#website_boxed{width:100vw;max-width:100%;}#website_boxed:before,#website_boxed:after{content:&quot; &quot;;display:table;}#website_boxed:after{clear:both;}#main_navbar_container,#main_navbar_container_left,.hgr_woo_minicart,.fixed_menu{display:none;}.central_logo .hgr_identity{float:left;margin:0;text-align:left;}.initialHeaderSize{height:150px;}.finalHeaderSize{height:100px !important;}#fssearch_container #searchform input[type=text]{font-size:50px !important;height:100px !important;}#comments .depth-2,#comments .depth-3,#comments .depth-4,#comments .depth-5,#comments .depth-6,#comments .depth-7,#comments .depth-8,#comments .depth-9,#comments .depth-10{margin-left:0;}.woocommerce .product span.onsale{top:10px !important;right:10px !important;left:auto !important;}.hgr_main_image{float:right;width:470px;margin-bottom:20px;}.hgr_product_thumbnails{width:120px;max-height:460px;float:left;overflow:hidden;}.hgr_product_thumbnails a{margin-right:10px;}.hgr_product_thumbnails a:last-child{margin-right:0;}.hgr_product_thumbnails img{max-width:120px !important;height:auto;}.woocommerce-page div.product div.summary{width:600px !important;height:auto;float:left !important;}.woocommerce-page div.product div.summary p{text-align:justify;}.woocommerce-page div.product .product_title{text-align:left;}.woocommerce div.product .woocommerce-product-rating{float:right;}div.quantity_select{width:70px !important;background-position:50px !important;}.woocommerce select.qty{width:280px !important;}.woocommerce form.cart select.qty{width:85px !important;}.woocommerce div.product form.cart .button{margin-top:0 !important;width:50% !important;}.woocommerce div.product .product_meta .posted_in{padding:0 !important;}#tab-description{text-align:justify;}.woocommerce #respond input#submit{width:100%;}.woocommerce p.stars{font-size:0.9em;}.woocommerce p.stars span{display:block;text-align:center;}.woocommerce .related ul.products li.product,.woocommerce .related ul li.product{width:32% !important;clear:none !important;margin-left:2px;margin-right:2px;float:left !important;}.woocommerce .related ul.products li.product a,.woocommerce-page .related ul.products li.product a{left:37%;top:-12px;}.woocommerce a.button,.woocommerce-page a.button{margin-top:0px !important;left:10px !important;top:10px !important;}.woocommerce ul.products li.product,.woocommerce-page ul.products li.product{width:48% !important;}}@media (min-width: 600px) and (max-width: 599px){.standAlonePage .page_title_container .container{margin-top:60px;}.container,#container{max-width:720px;}.megamenu{width:100%;}ul.primary_menu{margin-top:0;}#main_navbar_container,#main_navbar_container_left,.hgr_woo_minicart,.fixed_menu{display:none;}.central_logo .hgr_identity{float:left;margin:0;text-align:left;}#website_boxed{width:100vw;max-width:100%;}#website_boxed:before,#website_boxed:after{content:&quot; &quot;;display:table;}#website_boxed:after{clear:both;}.initialHeaderSize{height:150px;}.finalHeaderSize{height:100px !important;}.woocommerce .product span.onsale{top:10px !important;right:10px !important;left:auto !important;}.hgr_main_image{float:right;width:500px;margin-bottom:20px;}.hgr_product_thumbnails{width:200px;max-height:500px;float:left;overflow:hidden;}.hgr_product_thumbnails a{margin-right:10px;}.hgr_product_thumbnails a:last-child{margin-right:0;}.hgr_product_thumbnails img{max-width:200px !important;height:auto;}.woocommerce-page div.product div.summary{width:700px !important;height:auto;float:left !important;}.woocommerce-page div.product div.summary p{text-align:justify;}.woocommerce-page div.product .product_title{text-align:left;}.woocommerce div.product .woocommerce-product-rating{float:right;}div.quantity_select{width:70px !important;background-position:50px !important;}.woocommerce select.qty{width:280px !important;}.woocommerce form.cart select.qty{width:85px !important;}.woocommerce div.product form.cart .button{margin-top:0 !important;width:50% !important;}.woocommerce div.product .product_meta .posted_in{padding:0 !important;}#tab-description{text-align:justify;}.woocommerce #respond input#submit{width:100%;}.woocommerce p.stars{font-size:0.9em;}.woocommerce p.stars span{display:block;text-align:center;}.woocommerce .related ul.products li.product,.woocommerce .related ul li.product{width:32% !important;clear:none !important;margin-left:2px;margin-right:2px;float:left !important;}.woocommerce .related ul.products li.product a,.woocommerce-page .related ul.products li.product a{left:37%;top:-12px;}.woocommerce a.button,.woocommerce-page a.button{margin-top:0px !important;left:10px !important;top:10px !important;}}@media (min-width: 600px) and (max-width: 599px){.container,#container{max-width:920px;}.megamenu{width:100%;}ul.primary_menu{line-height:0;}ul.sub-menu{line-height:24px;top:-1;}#main_navbar_container,#main_navbar_container_left,.hgr_woo_minicart,.fixed_menu{display:none;}.central_logo .hgr_identity{float:left;margin:0;text-align:left;}#website_boxed{width:100vw;max-width:100%;}#website_boxed:before,#website_boxed:after{content:&quot; &quot;;display:table;}#website_boxed:after{clear:both;}.initialHeaderSize{height:150px;}.finalHeaderSize{height:100px !important;}.isDesktop.notMobile #hgr_top_navbar_container.headerappear{-moz-transform:translateY(0);-o-transform:translateY(0);-ms-transform:translateY(0);-webkit-transform:translateY(0);transform:translateY(0);-webkit-transition:transform .33s ease-in-out;-moz-transition:transform .33s ease-in-out;transition:transform .33s ease-in-out;}.isDesktop.notMobile #hgr_top_navbar_container.headerhidden{-moz-transform:translateY(-100%);-o-transform:translateY(-100%);-ms-transform:translateY(-100%);-webkit-transform:translateY(-100%);transform:translateY(-100%);-webkit-transition:transform .33s ease-in-out;-moz-transition:transform .33s ease-in-out;transition:transform .33s ease-in-out;}.woocommerce .product span.onsale{top:10px !important;right:10px !important;left:auto !important;}.hgr_main_image{float:right;width:700px;margin-bottom:20px;}.hgr_product_thumbnails{width:200px;float:left;overflow:hidden;}.hgr_product_thumbnails a{margin-right:10px;}.hgr_product_thumbnails a:last-child{margin-right:0;}.hgr_product_thumbnails img{max-width:200px !important;height:auto;}.woocommerce-page div.product div.summary{width:920px !important;height:auto;float:left !important;}.woocommerce-page div.product div.summary p{text-align:justify;}.woocommerce-page div.product .product_title{text-align:left;}.woocommerce div.product .woocommerce-product-rating{float:right;}div.quantity_select{width:70px !important;background-position:50px !important;}.woocommerce select.qty{width:280px !important;}.woocommerce form.cart select.qty{width:70px !important;}.woocommerce div.product form.cart .button{margin-top:0 !important;float:none;}.woocommerce div.product .product_meta .posted_in{padding:0 !important;}#tab-description{text-align:justify;}.woocommerce #respond input#submit{width:50%;float:right;}.woocommerce p.stars{font-size:0.9em;}.woocommerce p.stars span{display:block;}.woocommerce .related ul.products li.product,.woocommerce .related ul li.product{width:24% !important;clear:none !important;margin-left:2px;margin-right:2px;float:left !important;}.woocommerce .related ul.products li.product a,.woocommerce-page .related ul.products li.product a{left:39%;bottom:125px;}.woocommerce a.button,.woocommerce-page a.button{margin-top:0px !important;left:10px !important;top:10px !important;}}@media (min-width: 600px) and (max-width: 599px){.container,#container{max-width:1200px;}.megamenu{width:100%;}ul.primary_menu{line-height:0;}ul.sub-menu{line-height:24px;top:-1;}#main_navbar_container,#main_navbar_container_left,.hgr_woo_minicart,.fixed_menu{display:none;}.central_logo .hgr_identity{float:left;margin:0;text-align:left;}#website_boxed{width:100vw;max-width:100%;}.initialHeaderSize{height:150px;}.finalHeaderSize{height:100px !important;}.isDesktop.notMobile #hgr_top_navbar_container.headerappear{-moz-transform:translateY(0);-o-transform:translateY(0);-ms-transform:translateY(0);-webkit-transform:translateY(0);transform:translateY(0);-webkit-transition:transform .33s ease-in-out;-moz-transition:transform .33s ease-in-out;transition:transform .33s ease-in-out;}.isDesktop.notMobile #hgr_top_navbar_container.headerhidden{-moz-transform:translateY(-100%);-o-transform:translateY(-100%);-ms-transform:translateY(-100%);-webkit-transform:translateY(-100%);transform:translateY(-100%);-webkit-transition:transform .33s ease-in-out;-moz-transition:transform .33s ease-in-out;transition:transform .33s ease-in-out;}.woocommerce .product span.onsale{top:10px !important;right:10px !important;left:auto !important;}.hgr_main_image{float:right;width:700px;margin-bottom:20px;}.hgr_product_thumbnails{width:200px;float:left;overflow:hidden;}.hgr_product_thumbnails a{margin-right:10px;}.hgr_product_thumbnails a:last-child{margin-right:0;}.hgr_product_thumbnails img{max-width:200px !important;height:auto;}.woocommerce-page div.product div.summary{width:920px !important;height:auto;float:left !important;}.woocommerce-page div.product div.summary p{text-align:justify;}.woocommerce-page div.product .product_title{text-align:left;}.woocommerce div.product .woocommerce-product-rating{float:right;}div.quantity_select{width:70px !important;background-position:50px !important;}.woocommerce select.qty{width:280px !important;}.woocommerce form.cart select.qty{width:70px !important;}.woocommerce div.product form.cart .button{margin-top:0 !important;float:none;}.woocommerce div.product .product_meta .posted_in{padding:0 !important;}#tab-description{text-align:justify;}.woocommerce #respond input#submit{width:50%;float:right;}.woocommerce p.stars{font-size:0.9em;}.woocommerce p.stars span{display:block;}.woocommerce .related ul.products li.product,.woocommerce .related ul li.product{width:24% !important;clear:none !important;margin-left:2px;margin-right:2px;float:left !important;}.woocommerce .related ul.products li.product a,.woocommerce-page .related ul.products li.product a{left:39%;bottom:125px;}.woocommerce a.button,.woocommerce-page a.button{margin-top:0px !important;left:10px !important;top:10px !important;}}@media (min-width: 600px){.container,#container{max-width:1400px;}.cd-primary-nav-trigger,#mainNavUl{display:none;}.megamenu{width:100%;}ul.primary_menu{line-height:0;}ul.sub-menu{line-height:24px;top:-1;}#website_boxed{width:100vw;max-width:100%;}.initialHeaderSize{height:150px;}.finalHeaderSize{height:100px !important;}.isDesktop.notMobile #hgr_top_navbar_container.headerappear{-moz-transform:translateY(0);-o-transform:translateY(0);-ms-transform:translateY(0);-webkit-transform:translateY(0);transform:translateY(0);-webkit-transition:transform .33s ease-in-out;-moz-transition:transform .33s ease-in-out;transition:transform .33s ease-in-out;}.isDesktop.notMobile #hgr_top_navbar_container.headerhidden{-moz-transform:translateY(-100%);-o-transform:translateY(-100%);-ms-transform:translateY(-100%);-webkit-transform:translateY(-100%);transform:translateY(-100%);-webkit-transition:transform .33s ease-in-out;-moz-transition:transform .33s ease-in-out;transition:transform .33s ease-in-out;}.hgr_product_images{width:960px;height:800px;float:left;}.hgr_product_summary{width:700px;height:800px;float:right;}.hgr_main_image{float:left;width:600px;}.hgr_main_image.has_thumbnails{width:480px;}.hgr_product_thumbnails{width:100px;margin-right:20px;max-height:800px;float:left;overflow:hidden;}.woocommerce .product span.onsale{top:10px !important;right:10px !important;left:auto !important;}div.quantity_select{width:70px !important;background-position:50px !important;}.woocommerce select.qty{width:280px !important;}.woocommerce form.cart select.qty{width:85px !important;}.woocommerce div.product form.cart .button{margin-top:0 !important;float:none;}.woocommerce .related ul.products li.product,.woocommerce .related ul li.product{width:24% !important;clear:none !important;margin-left:2px;margin-right:2px;float:left !important;}.woocommerce .related ul.products li.product a,.woocommerce-page .related ul.products li.product a{left:39%;bottom:125px;}.woocommerce a.button,.woocommerce-page a.button{margin-top:0px !important;left:10px !important;top:10px !important;}}
+.vc_custom_1519664808112{margin-top: -140px !important;padding-top: 210px !important;padding-bottom: 250px !important;background-image: url(https://codepilot.ai/wp-content/uploads/2018/02/Hero_Background.svg?id=3472) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1518471068265{margin-top: -150px !important;margin-bottom: 75px !important;}.vc_custom_1519671253557{margin-right: 100px !important;margin-left: 100px !important;padding-top: 0px !important;padding-bottom: 0px !important;background: #f8fdfa url(https://codepilot.ai/wp-content/uploads/2018/02/Background-Section-2.png?id=3013) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1519670724307{margin-right: 100px !important;margin-left: 100px !important;background: #f8fdfa url(https://codepilot.ai/wp-content/uploads/2018/02/Background-Section-2.png?id=3013) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1518020567921{margin-top: -100px !important;margin-right: 100px !important;margin-left: 100px !important;padding-top: 0px !important;padding-bottom: 50px !important;}.vc_custom_1518020567921{margin-top: -100px !important;margin-right: 100px !important;margin-left: 100px !important;padding-top: 0px !important;padding-bottom: 50px !important;}.vc_custom_1517947553663{margin-right: 100px !important;margin-left: 100px !important;padding-top: 50px !important;padding-bottom: 50px !important;background-color: #f8fdfa !important;}.vc_custom_1517947553663{margin-right: 100px !important;margin-left: 100px !important;padding-top: 50px !important;padding-bottom: 50px !important;background-color: #f8fdfa !important;}.vc_custom_1518031897543{margin-right: 100px !important;margin-left: 100px !important;padding-top: 50px !important;padding-bottom: 50px !important;}.vc_custom_1519666450427{background-image: url(https://codepilot.ai/wp-content/uploads/2018/02/Background_Last_section.svg?id=3476) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1525880630184{padding-top: 25px !important;}.vc_custom_1519690845637{margin-top: 20px !important;margin-bottom: -10px !important;}.vc_custom_1528224967922{padding-top: 25px !important;}.vc_custom_1519243379422{margin-top: 10px !important;padding-top: 0px !important;padding-right: 0px !important;padding-left: 0px !important;border-radius: 5px !important;}.vc_custom_1518801135065{padding-top: 0px !important;padding-right: 20px !important;padding-bottom: 0px !important;padding-left: 20px !important;}.vc_custom_1519245088511{padding-top: 15px !important;}.vc_custom_1518809188062{padding-right: 255px !important;padding-left: 255px !important;}.vc_custom_1519669602272{background-color: #ffffff !important;}.vc_custom_1517946483062{margin-top: 16px !important;margin-bottom: 16px !important;}.vc_custom_1518037470347{margin-bottom: 16px !important;padding-bottom: 0px !important;}.vc_custom_1519669609232{background-color: #ffffff !important;}.vc_custom_1517946471157{margin-top: 16px !important;margin-bottom: 16px !important;}.vc_custom_1518037442820{margin-bottom: 16px !important;padding-bottom: 0px !important;}.vc_custom_1519670791945{background-color: #ffffff !important;}.vc_custom_1519670843368{padding-bottom: 21px !important;}.vc_custom_1517946550658{margin-top: 16px !important;margin-bottom: 16px !important;padding-bottom: 0px !important;}.vc_custom_1519244191976{margin-bottom: 16px !important;padding-bottom: 0px !important;}.vc_custom_1519671286047{padding-top: 300px !important;padding-bottom: 100px !important;}.vc_custom_1525879984730{padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1519671322228{padding-top: 250px !important;}.vc_custom_1519671360163{padding-top: 200px !important;}.vc_custom_1518464980716{padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1518037311131{padding-top: 50px !important;}.vc_custom_1518037311131{padding-top: 50px !important;}.vc_custom_1518022050424{margin-top: 0px !important;margin-right: 80px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1518025067374{margin-right: 190px !important;margin-bottom: 50px !important;margin-left: 190px !important;}.vc_custom_1518023451359{padding-top: 100px !important;padding-bottom: 100px !important;}.vc_custom_1519668743252{padding-top: 24px !important;padding-right: 24px !important;padding-bottom: 24px !important;padding-left: 24px !important;}.vc_custom_1519668724214{padding-top: 24px !important;padding-right: 24px !important;padding-bottom: 24px !important;padding-left: 24px !important;}.vc_custom_1518622836719{padding-top: 15px !important;}.vc_custom_1520538733816{background-color: #2b2d37 !important;}.vc_custom_1519675540038{margin-top: -85px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 90px !important;}.vc_custom_1519664740947{margin-top: -35px !important;}.vc_custom_1519669127411{margin-top: -25px !important;}.vc_custom_1519669178459{margin-top: -25px !important;}.vc_custom_1519669170874{margin-top: -25px !important;}.vc_custom_1529004354066{margin-top: -25px !important;}.vc_custom_1518468872434{padding-top: 100px !important;}.vc_custom_1524759075421{padding-top: 100px !important;}.vc_custom_1518552848754{margin-bottom: 25px !important;padding-top: 25px !important;}.vc_custom_1518642774077{margin-bottom: 25px !important;}.vc_custom_1518635029838{margin-bottom: 50px !important;padding-top: 25px !important;padding-bottom: 100px !important;background: #3f9f9b url(https://codepilot.ai/wp-content/uploads/2018/02/Background-Section-2-1.png?id=3224) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1518632761148{border-top-width: 50px !important;}.vc_custom_1520479274774{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1520479348709{border-top-width: 50px !important;}.vc_custom_1519674014065{padding-right: 50px !important;}.vc_custom_1519674028028{margin-left: 25px !important;padding-right: 50px !important;padding-left: 50px !important;background-color: #f8fdfa !important;border-radius: 10px !important;}.vc_custom_1518631691409{margin-top: 25px !important;margin-bottom: 25px !important;}.vc_custom_1518635643260{margin-bottom: 0px !important;}.vc_custom_1525880022895{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1518632113586{margin-bottom: 0px !important;padding-top: 25px !important;}.vc_custom_1518631302165{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1518632127851{margin-bottom: 0px !important;padding-top: 25px !important;}.vc_custom_1518631836298{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1518634136285{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1518634119876{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1518637015141{padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1518637001794{padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1518649770609{padding-top: 35px !important;}.vc_custom_1518813462869{padding-bottom: 25px !important;}.vc_custom_1518727764583{margin-top: 75px !important;}.vc_custom_1518728353156{margin-top: 35px !important;margin-bottom: 0px !important;padding-bottom: 0px !important;}.vc_custom_1518795412136{margin-top: 25px !important;padding-bottom: 75px !important;}.vc_custom_1529019562339{margin-bottom: -2px !important;}.vc_custom_1529019571660{margin-bottom: -2px !important;}.vc_custom_1518727747927{padding-bottom: 50px !important;}.vc_custom_1518726855064{background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1529078815289{margin-top: 45px !important;}.vc_custom_1518726915960{background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1519223029462{margin-top: 45px !important;}.vc_custom_1518804145954{margin-bottom: 50px !important;}.vc_custom_1518729990761{margin-top: -45px !important;margin-right: 0px !important;margin-left: 0px !important;padding-top: 0px !important;padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1518728681681{margin-top: 0px !important;padding-right: 0px !important;padding-left: 0px !important;}.vc_custom_1523643969056{padding-left: 0px !important;}.vc_custom_1529078874930{margin-top: -25px !important;}.vc_custom_1520282488057{background-image: url(https://codepilot.ai/wp-content/uploads/2018/02/Background_Last_section.svg?id=3476) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1520276355980{background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1519932803847{padding-top: 65px !important;}.vc_custom_1519936395508{padding-top: 20px !important;}.vc_custom_1519402110411{padding-top: 20px !important;}.vc_custom_1519847821678{padding-right: 40px !important;padding-left: 40px !important;}.vc_custom_1520028387621{padding-top: 5px !important;padding-bottom: 5px !important;}.vc_custom_1520028376098{padding-top: 5px !important;padding-bottom: 5px !important;}.vc_custom_1520028381952{padding-top: 5px !important;padding-bottom: 5px !important;}.vc_custom_1520282488057{background-image: url(https://codepilot.ai/wp-content/uploads/2018/02/Background_Last_section.svg?id=3476) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1520276355980{background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1520284429204{padding-top: 65px !important;}.vc_custom_1519936395508{padding-top: 20px !important;}.vc_custom_1519402110411{padding-top: 20px !important;}.vc_custom_1520538384114{margin-top: -140px !important;padding-top: 210px !important;padding-bottom: 250px !important;}.vc_custom_1520539428751{padding-top: 25px !important;}.vc_custom_1520524232145{margin-top: 20px !important;margin-bottom: -10px !important;}.vc_custom_1520523089522{padding-right: 0px !important;padding-left: 0px !important;border-radius: 5px !important;}.vc_custom_1520539362457{padding-top: 15px !important;}.vc_custom_1520616054007{margin-top: 75px !important;}.vc_custom_1520861860800{margin-bottom: 50px !important;padding-top: 25px !important;padding-bottom: 100px !important;background: #3f9f9b url(https://codepilot.ai/wp-content/uploads/2018/02/Background-Section-2-1.png?id=3224) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1520862100251{margin-left: 25px !important;padding-right: 50px !important;padding-left: 50px !important;border-radius: 10px !important;}.vc_custom_1520862062167{padding-right: 50px !important;}.vc_custom_1525880312450{margin-top: 25px !important;margin-bottom: 25px !important;}.vc_custom_1520862681107{margin-bottom: 0px !important;}.vc_custom_1525880363696{margin-top: 0px !important;padding-top: 0px !important;}.vc_custom_1520882276807{padding-top: 50px !important;padding-bottom: 40px !important;}.vc_custom_1521732954120{margin-top: 25px !important;padding-top: 25px !important;}.vc_custom_1521732943501{margin-top: 25px !important;margin-bottom: 25px !important;padding-top: 25px !important;padding-bottom: 25px !important;}.vc_custom_1521732925887{margin-top: 25px !important;margin-bottom: 25px !important;padding-top: 25px !important;padding-bottom: 25px !important;}.vc_custom_1521732908715{margin-top: 25px !important;margin-bottom: 25px !important;padding-top: 25px !important;padding-bottom: 25px !important;}.vc_custom_1522866511035{margin-top: 100px !important;}.vc_custom_1522867007196{margin-top: 50px !important;padding-top: 20px !important;}.vc_custom_1519664808112{margin-top: -140px !important;padding-top: 210px !important;padding-bottom: 250px !important;background-image: url(https://codepilot.ai/wp-content/uploads/2018/02/Hero_Background.svg?id=3472) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1518471068265{margin-top: -150px !important;margin-bottom: 75px !important;}.vc_custom_1519671253557{margin-right: 100px !important;margin-left: 100px !important;padding-top: 0px !important;padding-bottom: 0px !important;background: #f8fdfa url(https://codepilot.ai/wp-content/uploads/2018/02/Background-Section-2.png?id=3013) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1519670724307{margin-right: 100px !important;margin-left: 100px !important;background: #f8fdfa url(https://codepilot.ai/wp-content/uploads/2018/02/Background-Section-2.png?id=3013) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1518020567921{margin-top: -100px !important;margin-right: 100px !important;margin-left: 100px !important;padding-top: 0px !important;padding-bottom: 50px !important;}.vc_custom_1518020567921{margin-top: -100px !important;margin-right: 100px !important;margin-left: 100px !important;padding-top: 0px !important;padding-bottom: 50px !important;}.vc_custom_1517947553663{margin-right: 100px !important;margin-left: 100px !important;padding-top: 50px !important;padding-bottom: 50px !important;background-color: #f8fdfa !important;}.vc_custom_1517947553663{margin-right: 100px !important;margin-left: 100px !important;padding-top: 50px !important;padding-bottom: 50px !important;background-color: #f8fdfa !important;}.vc_custom_1518031897543{margin-right: 100px !important;margin-left: 100px !important;padding-top: 50px !important;padding-bottom: 50px !important;}.vc_custom_1519666450427{background-image: url(https://codepilot.ai/wp-content/uploads/2018/02/Background_Last_section.svg?id=3476) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1525879621717{padding-top: 25px !important;}.vc_custom_1525879651654{padding-top: 25px !important;}.vc_custom_1524235824812{margin-top: 20px !important;margin-bottom: -10px !important;}.vc_custom_1519243379422{margin-top: 10px !important;padding-top: 0px !important;padding-right: 0px !important;padding-left: 0px !important;border-radius: 5px !important;}.vc_custom_1518801135065{padding-top: 0px !important;padding-right: 20px !important;padding-bottom: 0px !important;padding-left: 20px !important;}.vc_custom_1523973298484{padding-top: 15px !important;}.vc_custom_1524235786557{margin-top: -50px !important;}.vc_custom_1524235773046{margin-top: -140px !important;padding-right: 255px !important;padding-left: 255px !important;}.vc_custom_1524239343028{margin-top: -40px !important;}.vc_custom_1524239354709{margin-top: -40px !important;}.vc_custom_1524239362861{margin-top: -40px !important;}.vc_custom_1519669602272{background-color: #ffffff !important;}.vc_custom_1517946483062{margin-top: 16px !important;margin-bottom: 16px !important;}.vc_custom_1518037470347{margin-bottom: 16px !important;padding-bottom: 0px !important;}.vc_custom_1519669609232{background-color: #ffffff !important;}.vc_custom_1517946471157{margin-top: 16px !important;margin-bottom: 16px !important;}.vc_custom_1518037442820{margin-bottom: 16px !important;padding-bottom: 0px !important;}.vc_custom_1519670791945{background-color: #ffffff !important;}.vc_custom_1519670843368{padding-bottom: 21px !important;}.vc_custom_1517946550658{margin-top: 16px !important;margin-bottom: 16px !important;padding-bottom: 0px !important;}.vc_custom_1519244191976{margin-bottom: 16px !important;padding-bottom: 0px !important;}.vc_custom_1519671286047{padding-top: 300px !important;padding-bottom: 100px !important;}.vc_custom_1525879735534{margin-top: -160px !important;padding-top: 40px !important;padding-bottom: 0px !important;}.vc_custom_1524239630559{margin-top: 160px !important;padding-top: 140px !important;}.vc_custom_1519671360163{padding-top: 200px !important;}.vc_custom_1518464980716{padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1518037311131{padding-top: 50px !important;}.vc_custom_1524239556769{margin-top: 0px !important;margin-right: 80px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1518025067374{margin-right: 190px !important;margin-bottom: 50px !important;margin-left: 190px !important;}.vc_custom_1519668743252{padding-top: 24px !important;padding-right: 24px !important;padding-bottom: 24px !important;padding-left: 24px !important;}.vc_custom_1519668724214{padding-top: 24px !important;padding-right: 24px !important;padding-bottom: 24px !important;padding-left: 24px !important;}.vc_custom_1518622836719{padding-top: 15px !important;}.vc_custom_1526307161732{padding-top: 25px !important;padding-bottom: 25px !important;}.vc_custom_1526307148451{padding-top: 20px !important;padding-bottom: 20px !important;}.vc_custom_1528464196502{padding-top: 25px !important;}.vc_custom_1528388092725{padding-top: 40px !important;padding-bottom: 40px !important;}.vc_custom_1528462124853{margin-top: 25px !important;}.vc_custom_1528462140573{margin-top: 25px !important;}
+body {
+    line-height: 26px !important;
+}
+#hgr_top_navbar_container.stickyHeader {
+    background: #67B2A6 !important;
+}
+/* #hgr_top_navbar_container .logo {
+    max-width: 15%;
+}
+*/
+#hgr_top_navbar_container .logo {
+    width: 193px;
+    margin-top: 5px;
+    float: left;
+}
+#hgr_top_navbar_container .logo-title {
+    margin-left: -80px;
+    margin-top: 5px;
+    font-family: &quot;Open Sans&quot;;
+    font-weight: 500;
+    color: #FFF;
+    font-size: 18px;
+    text-transform: none;
+    float: left;
+    letter-spacing: -0.5px;
+}
+#comingsoon .vc_btn3.vc_btn3-size-md {
+    padding: 5px 15px !important;
+    font-weight: bold !important;
+}
+
+.main_navbar_container {
+    font-family: &quot;Open Sans&quot; !important;
+    color: #FFF !important;
+   /* margin-top: -60px !important; */
+    margin-right: 15px;
+}
+
+.main_navbar_container a {
+    font-family: &#039;Open Sans&#039; !important;
+    color: #FFF !important;
+    font-size: 18px !important;
+    text-transform: capitalize !important;
+}
+
+.vc_btn3.vc_btn3-color-warning, .vc_btn3.vc_btn3-color-warning.vc_btn3-style-flat {
+    font-weight: bold !important;
+    font-size: 18px !important;
+}
+
+#main_navbar_container ul.main_navbar li, #fixed_navbar_container ul.fixed_navbar li, #main_navbar_container_left ul.main_navbar.left_menu li {
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+i.fa-chevron-up {
+    color: #FFF !important;
+}
+
+.hgr_megafooter .wpb_single_image img {
+    max-width: 60% !important;
+}
+.widget_nav_menu ul {
+    margin-top: 35px;
+    list-style-type: none !important;
+}
+.widget_nav_menu ul li {
+    padding-bottom: 20px;
+}
+.widget_nav_menu ul li a {
+    color: #FFF;
+}
+/* home page */
+@media (max-width: 1300px) {
+ div.vc_custom_1518037508741 {
+    padding-right: 0px !important;
+    padding-left: 0px !important;
+}
+}
+.home #getcodepilot, .home #copybutton {
+    /*display: none;*/
+}
+#copyTarget {
+ position: absolute;
+ display: block;
+ margin-left: -999999px;
+}
+#getcodepilot {
+    max-width: 550px;
+    min-height: 315px;
+    background: #fff;
+    box-shadow: 0 8px 12px rgba(0,0,0,0.12);
+    float: left;
+    position: relative;
+    width: 100%;
+}
+#mauticform_input_acceptlicense_email {
+    border: 0;
+    background: #EDEDED;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    font-size: 16px;
+}
+#mauticform_input_codepilotbeta_email {
+    border: 0;
+    background: #EDEDED;
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 5px;
+    font-size: 16px;    
+}
+.mauticform-checkboxgrp-checkbox {
+    margin-right: 5px;
+    margin-left: 3px;
+    transform: scale(1.3);
+}
+#getcodepilot p, #getcodepilot label {
+    font-size: 16px;
+}
+#getcodepilot a {
+    font-weight: bold;
+    color: #000;
+}
+#getcodepilot h2 {
+    font-size: 25px;
+    line-height: 45px;
+    margin-top: -10px;
+}
+#mauticform_input_acceptlicense_submit {
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #F90;
+    padding: 14px 20px;
+    border-radius: 5px;
+    border: 0px;
+    float: right;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+#mauticform_input_codepilotbeta_submit {
+    font-weight: bold;
+    font-size: 16px;
+    color: #FFF;
+    background-color: #F90;
+    padding: 14px 20px;
+    border-radius: 5px;
+    border: 0px;
+    float: right;
+    margin-top: 15px;
+    text-transform: uppercase;
+}
+#copyButton {
+    background: #fff;
+    border: 0px;
+}
+#msg {
+    display: block;
+    float: left;
+    clear: both;
+    font-weight: bold;
+    color: #f90;
+    font-size: 13px;
+}
+ul.tabs{
+			margin: 0px;
+			padding: 0px;
+			list-style: none;
+			position: absolute;
+			top: 0;
+			right: 0;
+			width: 15%;
+			height: 100%;
+			min-height: 315px;
+			background: #ededed;
+			border-radius: 0px 5px 5px 0;
+}
+ul.tabs li{
+			color: #222;
+			display: inline-block;
+			cursor: pointer;
+			height: 33.3%;
+			width: 100%;
+			font-size: 14px;
+			background: none;
+			text-align: center;
+			margin: 0 ! important;
+		}
+ul.tabs li:first-child {
+    border-radius: 0px 5px 0 0;
+}
+ul.tabs li:nth-child(3) {
+    border-radius: 0px 0px 5px 0;
+}
+ul.tabs li.current{
+			background: #fff;
+			color: #000;
+		}
+ul.tabs li {
+    color: #B9B9B9;
+}
+ul.tabs li.current {
+    color: #596464;
+}
+ul.tabs li .fa {
+    color: #B9B9B9;
+}
+ul.tabs li.current .fa {
+    color: #596464;
+}
+.tab-content{
+			display: none;
+			/*width: 80%;*/
+			/*width: 480px;*/
+			width: 95% !important;
+			padding-right: 60px;
+		}
+.tab-content.current{
+			display: inherit;
+		}
+ul.tabs .vc_icon_element-icon {
+    font-size: 2.85em!important;
+    padding-top: 25px;
+}
+
+.link {
+    cursor: pointer;
+}
+
+/* interior pages */
+.page-template-page-leftsidebar .logo{
+    visibility: hidden;
+}
+.page-template-page-leftsidebar .hgr_identity a {
+    display: block;
+    width: 192px;
+    height: 65px;
+    background: url(//codepilot.ai/wp-content/uploads/2018/02/logo-black-side-small.png) 0px 20px no-repeat;
+}
+.page-template-page-leftsidebar #website_boxed #hgr_sections, .page-template-page-leftsidebar #hgr_top_navbar_container.stickyHeader, .page-template-page-leftsidebar #hgr_top_navbar_container {
+    background: #F3F7F4 !important;
+}
+.page-template-page-leftsidebar .main_navbar_container a {
+    color: #000 !important;
+}
+.page-template-page-leftsidebar #hgr_sections .rightFloated {
+    float: right ! important;
+    margin-top: 100px;
+    background: #fff;
+    border: solid 1px #EBEBEB;
+}
+.page-template-page-leftsidebar #hgr_sections .leftFloated {
+    float: left ! important;
+    padding-top: 100px;
+    position: fixed;
+}
+.page-id-3069.page-template-page-leftsidebar #hgr_sections .leftFloated a {
+    color: #222F2F;
+}
+/*.page-template-page-leftsidebar .custom-html-widget {
+    display: none;
+}*/
+.custom-html-widget {
+    display: block;
+    padding-left: 50px;
+}
+.page-id-3069 .custom-html-widget ul li,
+.page .custom-html-widget ul {
+    list-style: none;
+    padding: 10px 0;
+}
+
+
+
+
+/*/// Artur Bobinski Styles ///*/
+.hgr_fixed_header, .page-template-page-leftsidebar #hgr_top_navbar_container { background-color: #3F9F9B !important; }
+.page-template-page-leftsidebar .hgr_identity a { background: none !important; }
+.page-template-page-leftsidebar .logo { visibility: inherit !important; }
+.page-template-page-leftsidebar .main_navbar_container a { color: #FFFFFF !important; }
+
+.page_widget h4 { display: none !important; visibility: hidden !important; }
+.arrow-up {
+    width: 0;
+    height: 0;
+    top: -15px;
+    left: 18.5%;
+    position: absolute;
+    border-style: solid;
+    border-width: 0 25px 25px 25px;
+    border-color: transparent transparent #ffffff transparent;
+    line-height: 0px;
+    _border-color: #000000 #000000 #ffffff #000000;
+    _filter: progid:DXImageTransform.Microsoft.Chroma(color=&#039;#000000&#039;);
+}
+.vc_custom_1518021987487 {
+    padding-left: 0px !important;
+}
+
+/* Artur - Download Box 3D Anim */
+#getcodepilot {
+  transition: .6s;
+  transform-origin: 100px -25px;
+  transform: rotateX(-90deg);
+}
+#getcodepilot.active {
+    -webkit-transform: perspective(500px);
+    -webkit-transform-style: preserve-3d;
+}
+.vc_custom_1518029937547 .widget_nav_menu ul {
+    margin-top: 20px !important;
+}
+.page-template-page-leftsidebar .vc_col-sm-3 ul li, .page-template-page-rightsidebar .vc_col-sm-3 ul li, .page-template-page-leftsidebar .vc_col-sm-3 ul.children li, .page-template-page-rightsidebar .vc_col-sm-3 ul.children li, .shop_widget ul li {
+    border: none !important;
+    background: none !important;
+}
+.page-template-page-leftsidebar .vc_col-sm-3 ul li a, .page-template-page-rightsidebar .vc_col-sm-3 ul li a, .shop_widget ul li a {
+    padding-top: 0px !important;
+}
+.page-template-page-leftsidebar .hgr_identity a {
+    width: 300px !important;
+}
+
+@media (max-width: 1199px) and (min-width: 800px) {
+    .vc_custom_1519670715320 {
+        padding-top: 0px !important;
+        padding-bottom: 0px !important;
+    }
+    .vc_custom_1518023451359 h1 {
+        padding-left: 100px !important;
+        padding-right: 100px !important;
+        text-align: center !important;
+    }
+    .vc_custom_1519664808112 .wpb_wrapper {
+        text-align: center !important;
+    }
+    .vc_custom_1519664808112 .wpb_wrapper h1 {
+        padding-left: 75px;
+        padding-right: 75px;
+        text-align: center !important;
+    }
+    #getcodepilot {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        float: none !important;
+    }
+    #getcodepilot .arrow-up {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        position: relative !important;
+        z-index: 5000 !important;
+        left: 0;
+    }
+    .screeny {
+        margin-top: -300px;
+        margin-bottom: -150px;
+        position: relative;
+        z-index: 0;
+    }
+    .page-template-page-leftsidebar .hgr_identity a {
+        width: 300px !important;
+    }
+    .custom-html-widget {
+        margin-top: 50px;
+        padding-left: 0px !important;
+    }
+}
+
+#landing-page .land-page {
+    background-position: 0 445px !important;
+}
+
+#landing-page #hgr_sections.dark-scheme {
+	background: #000 !important;
+}
+#landing-page .dark-scheme .light-scheme h2,
+#landing-page .dark-scheme h1,
+#landing-page .dark-scheme h2,
+#landing-page .dark-scheme h3,
+#landing-page .dark-scheme h4,
+#landing-page .dark-scheme h5,
+#landing-page .dark-scheme h2.title,
+#landing-page .dark-scheme p {
+	color: #FFF !important;
+}
+#landing-page .dark-scheme a {
+	color: #FDFDFD;
+}
+#landing-page .dark-scheme {
+    min-height: 100%;
+}
+#landing-page #footer {
+    position: absolute !important;
+    left: 0px !important;
+    bottom: -32px !important;
+}
+
+.home .vc_custom_1522855233265 {
+    margin-top: -25px !important;
+}
+
+		.wpb_btn-success, #itemcontainer-controller {
+			background-color: #ef9337!important;
+		}
+		.hoveredIcon {
+			color:#ef9337&gt;!important;
+		}
+		
+		.topborder h3 a {
+			border-top: 1px solid #ef9337;
+		}
+		ul.nav a.active {
+			color: #ef9337 !important;
+		}
+		.testimonial_text{
+			margin-bottom:60px;
+		}
+</style>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var monsterinsights_frontend = {"js_events_tracking":"true","is_debug_mode":"false","download_extensions":"doc,exe,js,pdf,ppt,tgz,zip,xls,dmg,AppImage","inbound_paths":"","home_url":"https:\/\/codepilot.ai","track_download_as":"event","internal_label":"int","hash_tracking":"true"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/plugins/google-analytics-premium/assets/js/frontend.min.js'></script>
+<script type='text/javascript' src='https://codepilot.ai/wp-includes/js/jquery/jquery.js'></script>
+<script type='text/javascript' src='https://codepilot.ai/wp-includes/js/jquery/jquery-migrate.min.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ctPublic = {"gdpr_forms":[],"gdpr_text":"By using this form you agree with the storage and processing of your data by using the Privacy Policy on this website."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/plugins/cleantalk-spam-protect/js/apbct-public--gdpr.js'></script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/plugins/cs-remove-version-number-from-css-js/public/js/cs-remove-version-number-from-css-js-public.js'></script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/themes/stash-child/scripts/mautic.js'></script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/themes/stash/highgrade/js/modernizr.custom.js'></script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/themes/stash/highgrade/js/html5shiv.js'></script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/themes/stash/highgrade/js/respond.min.js'></script>
+<link rel='https://api.w.org/' href='https://codepilot.ai/wp-json/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://codepilot.ai/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="https://codepilot.ai/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 4.9.6" />
+<link rel='shortlink' href='https://codepilot.ai/' />
+<link rel="alternate" type="application/json+oembed" href="https://codepilot.ai/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcodepilot.ai%2F" />
+<link rel="alternate" type="text/xml+oembed" href="https://codepilot.ai/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fcodepilot.ai%2F&#038;format=xml" />
+<meta name="generator" content="Powered by WPBakery Page Builder - drag and drop page builder for WordPress."/>
+<!--[if lte IE 9]><link rel="stylesheet" type="text/css" href="https://codepilot.ai/wp-content/plugins/js_composer/assets/css/vc_lte_ie9.min.css" media="screen"><![endif]--><style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #ffffff; }
+</style>
+<script type="text/javascript" src="https://www.usefomo.com/api/v1/Z6Z2xh7Rq9VtOBTMzHG1nw/load.js" async></script>
+ 
+<link rel="icon" href="https://codepilot.ai/wp-content/uploads/2018/02/cropped-favicon-32x32.png" sizes="32x32" />
+<link rel="icon" href="https://codepilot.ai/wp-content/uploads/2018/02/cropped-favicon-192x192.png" sizes="192x192" />
+<link rel="apple-touch-icon-precomposed" href="https://codepilot.ai/wp-content/uploads/2018/02/cropped-favicon-180x180.png" />
+<meta name="msapplication-TileImage" content="https://codepilot.ai/wp-content/uploads/2018/02/cropped-favicon-270x270.png" />
+		<style type="text/css" id="wp-custom-css">
+			
+		</style>
+	<style type="text/css" title="dynamic-css" class="options-output">.back-to-top{background:#ff9900;}.container_xs{width:300px;}.container_s{width:440px;}.container_m{width:600px;}.container_l{width:720px;}.container_xl{width:920px;}.container_xxl{width:1200px;}.container_over_xxl{width:1400px;}body, #hgr_sections{background:#ffffff;}.theme_dominant_color{color:#ef9337;}.dark-scheme, .dark-scheme.hgr_megafooter, .woocommerce .hgr_megafooter .dark-scheme{color:#dcdff2;}.dark-scheme h1, .dark-scheme.hgr_megafooter h1, .woocommerce .hgr_megafooter .dark-scheme h1{color:#ffffff;}.dark-scheme h2, .dark-scheme.hgr_megafooter h2, .woocommerce .hgr_megafooter .dark-scheme h2{color:#ffffff;}.dark-scheme h3, .dark-scheme.hgr_megafooter h3, .woocommerce .hgr_megafooter .dark-scheme h3{color:#dcdff2;}.dark-scheme h4, .dark-scheme.hgr_megafooter h4, .woocommerce .hgr_megafooter .dark-scheme h4{color:#ffffff;}.dark-scheme h5, .dark-scheme.hgr_megafooter h5, .woocommerce .hgr_megafooter .dark-scheme h5{color:#ffffff;}.dark-scheme h6, .dark-scheme.hgr_megafooter h6, .woocommerce .hgr_megafooter .dark-scheme h6{color:#ffffff;}.dark-scheme a, .dark-scheme.hgr_megafooter a, .woocommerce .hgr_megafooter .dark-scheme a, .minimal_footer.dark-scheme a{color:#dcdff2;}.dark-scheme a:hover, .dark-scheme.hgr_megafooter a:hover, .woocommerce .hgr_megafooter .dark-scheme a:hover, .minimal_footer.dark-scheme a:hover{color:#ffffff;}.light-scheme h1, .light-scheme.hgr_megafooter h1, .woocommerce .hgr_megafooter .light-scheme h1{color:#ffffff;}.light-scheme h2, .light-scheme.hgr_megafooter h2, .woocommerce .hgr_megafooter .light-scheme h2{color:#222f2f;}.light-scheme h3, .light-scheme.hgr_megafooter h3, .woocommerce .hgr_megafooter .light-scheme h3{color:#292929;}.light-scheme h4, .light-scheme.hgr_megafooter h4, .woocommerce .hgr_megafooter .light-scheme h4{color:#292929;}.light-scheme h5, .light-scheme.hgr_megafooter h5, .woocommerce .hgr_megafooter .light-scheme h5{color:#3f9f9b;}.light-scheme h6, .light-scheme.hgr_megafooter h6, .woocommerce .hgr_megafooter .light-scheme h6{color:#292929;}.light-scheme a, .light-scheme.hgr_megafooter a, .woocommerce .hgr_megafooter .light-scheme a, .minimal_footer.light-scheme a{color:#222f2f;}.light-scheme a:hover, .light-scheme.hgr_megafooter a:hover, .woocommerce .hgr_megafooter .light-scheme a:hover, .minimal_footer.light-scheme a:hover{color:#222f2f;}body, .megamenu, .single-hgr_portfolio{font-family:"Open Sans";line-height:22px;font-weight:400;font-style:normal;font-size:18px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading body, .megamenu, .single-hgr_portfolio,{opacity: 0;}.ie.wf-loading body, .megamenu, .single-hgr_portfolio,{visibility: hidden;}h1, .megamenu h1, .single-hgr_portfolio h1{font-family:"Open Sans";line-height:42px;font-weight:400;font-style:normal;font-size:36px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h1, .megamenu h1, .single-hgr_portfolio h1,{opacity: 0;}.ie.wf-loading h1, .megamenu h1, .single-hgr_portfolio h1,{visibility: hidden;}h2, .megamenu h2, .single-hgr_portfolio h2{font-family:"Open Sans";line-height:85px;font-weight:400;font-style:normal;font-size:32px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h2, .megamenu h2, .single-hgr_portfolio h2,{opacity: 0;}.ie.wf-loading h2, .megamenu h2, .single-hgr_portfolio h2,{visibility: hidden;}h3, .megamenu h3, .single-hgr_portfolio h3{font-family:"Open Sans";line-height:24px;font-weight:600;font-style:normal;font-size:18px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h3, .megamenu h3, .single-hgr_portfolio h3,{opacity: 0;}.ie.wf-loading h3, .megamenu h3, .single-hgr_portfolio h3,{visibility: hidden;}h4, .megamenu h4, .single-hgr_portfolio h4{font-family:"Roboto Slab";line-height:30px;font-weight:400;font-style:normal;font-size:18px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h4, .megamenu h4, .single-hgr_portfolio h4,{opacity: 0;}.ie.wf-loading h4, .megamenu h4, .single-hgr_portfolio h4,{visibility: hidden;}h5, .megamenu h5, .single-hgr_portfolio h5{font-family:"Roboto Condensed";line-height:24px;font-weight:700;font-style:normal;font-size:14px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h5, .megamenu h5, .single-hgr_portfolio h5,{opacity: 0;}.ie.wf-loading h5, .megamenu h5, .single-hgr_portfolio h5,{visibility: hidden;}h6, .megamenu h6, .single-hgr_portfolio h6{font-family:"Source Sans Pro";line-height:18px;font-weight:300;font-style:normal;font-size:12px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading h6, .megamenu h6, .single-hgr_portfolio h6,{opacity: 0;}.ie.wf-loading h6, .megamenu h6, .single-hgr_portfolio h6,{visibility: hidden;}#hgr_top_navbar_container, #hgr_top_navbar_container #main_navbar>li>a, #hgr_top_navbar_container #main_navbar_left>li>a, .dropdown-menu > li > a{font-family:Montserrat;text-transform:uppercase;line-height:60px;letter-spacing:1px;font-weight:normal;font-style:normal;font-size:12px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading #hgr_top_navbar_container, #hgr_top_navbar_container #main_navbar>li>a, #hgr_top_navbar_container #main_navbar_left>li>a, .dropdown-menu > li > a,{opacity: 0;}.ie.wf-loading #hgr_top_navbar_container, #hgr_top_navbar_container #main_navbar>li>a, #hgr_top_navbar_container #main_navbar_left>li>a, .dropdown-menu > li > a,{visibility: hidden;}#hgr_top_navbar_container #main_navbar>li>a, #hgr_top_navbar_container #main_navbar_left>li>a, .dropdown-menu>li>a, a.mobileFsSearch, .blog a.mobileFsSearch, a.cd-primary-nav-trigger, .blog a.cd-primary-nav-trigger, a.hgr_minicart, a.hgr_minicart .icon{color:#292929;}#hgr_top_navbar_container #main_navbar>li>a:hover, #hgr_top_navbar_container #main_navbar_left>li>a:hover, .dropdown-menu>li>a:hover, a.mobileFsSearch:hover, .blog a.mobileFsSearch:hover, a.cd-primary-nav-trigger:hover, .blog a.cd-primary-nav-trigger:hover, a.hgr_minicart:hover, a.hgr_minicart .icon:hover{color:#1c46f2;}.hgr_identity{padding-top:0;padding-right:0;padding-bottom:5px;padding-left:0;}.main_navbar_container, .left_menu_container{padding-top:5px;padding-right:0;padding-bottom:5px;padding-left:0;}#hgr_top_navbar_container{margin-top:0;margin-right:0;margin-bottom:0;margin-left:0;}#hgr_top_navbar_container{padding-top:0;padding-right:30px;padding-bottom:0;padding-left:30px;}#hgr_fixed_menu .fixed_menu_top_bar{font-family:Roboto;line-height:36px;font-weight:400;font-style:normal;color:#ffffff;font-size:12px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading #hgr_fixed_menu .fixed_menu_top_bar,{opacity: 0;}.ie.wf-loading #hgr_fixed_menu .fixed_menu_top_bar,{visibility: hidden;}#hgr_fixed_menu .fixed_menu_top_bar a{color:#2be2ff;}#hgr_fixed_menu .fixed_menu_top_bar a:hover{color:#ffffff;}#hgr_fixed_menu .fixed_menu_top_bar{background:#2a2a2a;}#hgr_fixed_menu .fixed_menu_middle_bar_left_side, #hgr_fixed_menu .fixed_menu_middle_bar_middle_side, #hgr_fixed_menu .fixed_menu_middle_bar_right_side{font-family:Roboto;line-height:18px;font-weight:400;font-style:normal;color:#2a2a2a;font-size:14px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading #hgr_fixed_menu .fixed_menu_middle_bar_left_side, #hgr_fixed_menu .fixed_menu_middle_bar_middle_side, #hgr_fixed_menu .fixed_menu_middle_bar_right_side,{opacity: 0;}.ie.wf-loading #hgr_fixed_menu .fixed_menu_middle_bar_left_side, #hgr_fixed_menu .fixed_menu_middle_bar_middle_side, #hgr_fixed_menu .fixed_menu_middle_bar_right_side,{visibility: hidden;}#hgr_fixed_menu .fixed_menu_middle_bar_left_side a, #hgr_fixed_menu .fixed_menu_middle_bar_middle_side a, #hgr_fixed_menu .fixed_menu_middle_bar_right_side a{color:#000000;}#hgr_fixed_menu .fixed_menu_middle_bar_left_side a:hover, #hgr_fixed_menu .fixed_menu_middle_bar_middle_side a:hover, #hgr_fixed_menu .fixed_menu_middle_bar_right_side a:hover{color:#dd9933;}#hgr_fixed_menu .fixed_menu_middle_bar{background:#ffffff;}#hgr_fixed_menu .fixed_menu_middle_bar{padding-top:15px;padding-right:0;padding-bottom:15px;padding-left:0;}#hgr_fixed_menu .fixed_menu_bottom_bar, #hgr_fixed_menu .fixed_menu_bottom_bar .fixed_navbar_container .fixed_navbar>li>a, #hgr_fixed_menu .fixed_menu_bottom_bar .dropdown-menu > li > a{font-family:Roboto;line-height:60px;font-weight:500;font-style:normal;font-size:14px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading #hgr_fixed_menu .fixed_menu_bottom_bar, #hgr_fixed_menu .fixed_menu_bottom_bar .fixed_navbar_container .fixed_navbar>li>a, #hgr_fixed_menu .fixed_menu_bottom_bar .dropdown-menu > li > a,{opacity: 0;}.ie.wf-loading #hgr_fixed_menu .fixed_menu_bottom_bar, #hgr_fixed_menu .fixed_menu_bottom_bar .fixed_navbar_container .fixed_navbar>li>a, #hgr_fixed_menu .fixed_menu_bottom_bar .dropdown-menu > li > a,{visibility: hidden;}#hgr_fixed_menu .fixed_menu_bottom_bar .fixed_navbar_container .fixed_navbar>li>a, #hgr_fixed_menu .fixed_menu_bottom_bar .dropdown-menu>li>a{color:#2a2a2a;}#hgr_fixed_menu .fixed_menu_bottom_bar .fixed_navbar_container .fixed_navbar>li>a:hover, #hgr_fixed_menu .fixed_menu_bottom_bar .dropdown-menu>li>a:hover{color:#ffffff;}#hgr_fixed_menu .fixed_menu_bottom_bar, #fixed_navbar .dropdown-menu{background:#2be2ff;}#hgr_fixed_menu .fixed_menu_bottom_bar{padding-top:10px;padding-right:0;padding-bottom:10px;padding-left:0;}.cd-primary-nav a,  #mainNavUl .dropdown-menu.multi-level li a{font-family:Montserrat;text-align:left;text-transform:uppercase;line-height:24px;letter-spacing:1px;font-weight:500;font-style:normal;font-size:16px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading .cd-primary-nav a,  #mainNavUl .dropdown-menu.multi-level li a,{opacity: 0;}.ie.wf-loading .cd-primary-nav a,  #mainNavUl .dropdown-menu.multi-level li a,{visibility: hidden;}.cd-primary-nav a, #mainNavUl .dropdown-menu.multi-level li a, a.mobilemenuopen{color:#292929;}.cd-primary-nav a:hover, #mainNavUl .dropdown-menu.multi-level li a:hover, a.mobilemenuopen:hover{color:#1c46f2;}.cd-primary-nav{background:#ffffff;}.wpcf7 p{font-family:Montserrat;text-align:left;text-transform:none;line-height:18px;font-weight:400;font-style:normal;color:#4b555f;font-size:12px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading .wpcf7 p,{opacity: 0;}.ie.wf-loading .wpcf7 p,{visibility: hidden;}.wpcf7 input[type=text], .wpcf7 input[type=email], .wpcf7 textarea{font-family:Montserrat;line-height:18px;font-weight:500;font-style:normal;color:#4b555f;font-size:13px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading .wpcf7 input[type=text], .wpcf7 input[type=email], .wpcf7 textarea,{opacity: 0;}.ie.wf-loading .wpcf7 input[type=text], .wpcf7 input[type=email], .wpcf7 textarea,{visibility: hidden;}.wpcf7 input[type=text], .wpcf7 input[type=email], .wpcf7 textarea{background:#ffffff;}.wpcf7 input[type=text], .wpcf7 input[type=email], .wpcf7 textarea{padding-top:15px;padding-right:20px;padding-bottom:15px;padding-left:20px;}.wpcf7 input[type=text], .wpcf7 input[type=email], .wpcf7 textarea, .wpcf7 input[type=submit]{margin-top:0;margin-right:0;margin-bottom:10px;margin-left:0;}.wpcf7 input[type=text], .wpcf7 input[type=email], .wpcf7 textarea{border-top:2px solid #e9ecef;border-bottom:2px solid #e9ecef;border-left:2px solid #e9ecef;border-right:2px solid #e9ecef;}.wpcf7 input[type=submit]{height:48px;}.wpcf7 input[type=submit]{background:#1c46f2;}.wpcf7 input[type=submit]:hover{background:#1d43dd;}.wpcf7 input[type=submit]{color:#ffffff;}.wpcf7 input[type=submit]:hover{color:#ffffff;}body.blog, body.single-post{font-family:Montserrat;line-height:28px;font-weight:400;font-style:normal;color:#4b555f;font-size:15px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading body.blog, body.single-post,{opacity: 0;}.ie.wf-loading body.blog, body.single-post,{visibility: hidden;}.blog h1, body.single-post h1{font-family:Montserrat;line-height:48px;font-weight:normal;font-style:normal;color:#292929;font-size:36px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading .blog h1, body.single-post h1,{opacity: 0;}.ie.wf-loading .blog h1, body.single-post h1,{visibility: hidden;}.blog h2, body.single-post h2{font-family:Montserrat;line-height:42px;font-weight:normal;font-style:normal;color:#292929;font-size:30px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading .blog h2, body.single-post h2,{opacity: 0;}.ie.wf-loading .blog h2, body.single-post h2,{visibility: hidden;}.blog h3, body.single-post h3{font-family:Montserrat;line-height:36px;font-weight:400;font-style:normal;color:#292929;font-size:24px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading .blog h3, body.single-post h3,{opacity: 0;}.ie.wf-loading .blog h3, body.single-post h3,{visibility: hidden;}.blog h4, body.single-post h4{font-family:Montserrat;line-height:30px;font-weight:normal;font-style:normal;color:#292929;font-size:18px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading .blog h4, body.single-post h4,{opacity: 0;}.ie.wf-loading .blog h4, body.single-post h4,{visibility: hidden;}.blog h5, body.single-post h5{font-family:Montserrat;line-height:24px;font-weight:400;font-style:normal;color:#292929;font-size:14px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading .blog h5, body.single-post h5,{opacity: 0;}.ie.wf-loading .blog h5, body.single-post h5,{visibility: hidden;}.blog h6, body.single-post h6{font-family:Montserrat;line-height:18px;font-weight:400;font-style:normal;color:#292929;font-size:12px;opacity: 1;visibility: visible;-webkit-transition: opacity 0.24s ease-in-out;-moz-transition: opacity 0.24s ease-in-out;transition: opacity 0.24s ease-in-out;}.wf-loading .blog h6, body.single-post h6,{opacity: 0;}.ie.wf-loading .blog h6, body.single-post h6,{visibility: hidden;}.blog a, .megamenu a{color:#292929;}.blog a:hover, .megamenu a:hover{color:#1c46f2;}</style><style type="text/css" data-type="vc_custom-css">.box-shadow {
+    -webkit-box-shadow: 0 8px 12px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 8px 12px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.12);
+    border-radius: 2px;
+}
+.box-shadow.box1,
+.box-shadow.box2 {
+    padding-bottom: 21px;
+}
+/*
+.screenshot {
+    -webkit-box-shadow: 0px 0px 12px 0px rgba(63,159,155,0.30);
+    -moz-box-shadow: 0px 0px 12px 0px rgba(63,159,155,0.30);
+    box-shadow: 0px 0px 12px 0px rgba(63,159,155,0.30);
+}
+*/
+
+.small-print {
+    font-size: 12px !important;
+}
+
+.three-box-top {
+    z-index: 5 !important;
+    position: relative;
+}
+.one-search {
+    z-index: 1 !important;
+    top: -175px !important;
+}
+
+.keepitsafe {
+    float: left;
+    padding-top: 27px;
+}
+
+.vc_custom_1519666450427.bottom-backgrounds {
+    background-position: bottom !important;
+}
+.footer-boxed .vc_column-inner {
+    -webkit-box-shadow: 0 8px 12px rgba(0,0,0,0.12);
+    -moz-box-shadow: 0 8px 12px rgba(0,0,0,0.12);
+    box-shadow: 0 8px 12px rgba(0,0,0,0.12);
+}
+.footer-getpilot h1 {
+    margin-bottom: 15px !important;
+}
+.vc_btn3.vc_btn3-color-orange.vc_btn3-style-3d {
+    font-size: 18px !important;
+    background-color: #F90 !important;
+    padding: 14px 20px !important;
+    font-weight: bold !important;
+}
+</style><style type="text/css" data-type="vc_shortcodes-custom-css">.vc_custom_1519664808112{margin-top: -140px !important;padding-top: 210px !important;padding-bottom: 250px !important;background-image: url(https://codepilot.ai/wp-content/uploads/2018/02/Hero_Background.svg?id=3472) !important;background-position: center !important;background-repeat: no-repeat !important;background-size: cover !important;}.vc_custom_1518471068265{margin-top: -150px !important;margin-bottom: 75px !important;}.vc_custom_1519671253557{margin-right: 100px !important;margin-left: 100px !important;padding-top: 0px !important;padding-bottom: 0px !important;background: #f8fdfa url(https://codepilot.ai/wp-content/uploads/2018/02/Background-Section-2.png?id=3013) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1519670724307{margin-right: 100px !important;margin-left: 100px !important;background: #f8fdfa url(https://codepilot.ai/wp-content/uploads/2018/02/Background-Section-2.png?id=3013) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1518020567921{margin-top: -100px !important;margin-right: 100px !important;margin-left: 100px !important;padding-top: 0px !important;padding-bottom: 50px !important;}.vc_custom_1518020567921{margin-top: -100px !important;margin-right: 100px !important;margin-left: 100px !important;padding-top: 0px !important;padding-bottom: 50px !important;}.vc_custom_1517947553663{margin-right: 100px !important;margin-left: 100px !important;padding-top: 50px !important;padding-bottom: 50px !important;background-color: #f8fdfa !important;}.vc_custom_1517947553663{margin-right: 100px !important;margin-left: 100px !important;padding-top: 50px !important;padding-bottom: 50px !important;background-color: #f8fdfa !important;}.vc_custom_1518031897543{margin-right: 100px !important;margin-left: 100px !important;padding-top: 50px !important;padding-bottom: 50px !important;}.vc_custom_1519666450427{background-image: url(https://codepilot.ai/wp-content/uploads/2018/02/Background_Last_section.svg?id=3476) !important;background-position: 0 0 !important;background-repeat: no-repeat !important;}.vc_custom_1525880630184{padding-top: 25px !important;}.vc_custom_1519690845637{margin-top: 20px !important;margin-bottom: -10px !important;}.vc_custom_1528224967922{padding-top: 25px !important;}.vc_custom_1519243379422{margin-top: 10px !important;padding-top: 0px !important;padding-right: 0px !important;padding-left: 0px !important;border-radius: 5px !important;}.vc_custom_1518801135065{padding-top: 0px !important;padding-right: 20px !important;padding-bottom: 0px !important;padding-left: 20px !important;}.vc_custom_1519245088511{padding-top: 15px !important;}.vc_custom_1518809188062{padding-right: 255px !important;padding-left: 255px !important;}.vc_custom_1519669602272{background-color: #ffffff !important;}.vc_custom_1517946483062{margin-top: 16px !important;margin-bottom: 16px !important;}.vc_custom_1518037470347{margin-bottom: 16px !important;padding-bottom: 0px !important;}.vc_custom_1519669609232{background-color: #ffffff !important;}.vc_custom_1517946471157{margin-top: 16px !important;margin-bottom: 16px !important;}.vc_custom_1518037442820{margin-bottom: 16px !important;padding-bottom: 0px !important;}.vc_custom_1519670791945{background-color: #ffffff !important;}.vc_custom_1519670843368{padding-bottom: 21px !important;}.vc_custom_1517946550658{margin-top: 16px !important;margin-bottom: 16px !important;padding-bottom: 0px !important;}.vc_custom_1519244191976{margin-bottom: 16px !important;padding-bottom: 0px !important;}.vc_custom_1519671286047{padding-top: 300px !important;padding-bottom: 100px !important;}.vc_custom_1525879984730{padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1519671322228{padding-top: 250px !important;}.vc_custom_1519671360163{padding-top: 200px !important;}.vc_custom_1518464980716{padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1518037311131{padding-top: 50px !important;}.vc_custom_1518037311131{padding-top: 50px !important;}.vc_custom_1518022050424{margin-top: 0px !important;margin-right: 80px !important;margin-bottom: 0px !important;padding-top: 0px !important;padding-bottom: 0px !important;}.vc_custom_1518025067374{margin-right: 190px !important;margin-bottom: 50px !important;margin-left: 190px !important;}.vc_custom_1518023451359{padding-top: 100px !important;padding-bottom: 100px !important;}.vc_custom_1519668743252{padding-top: 24px !important;padding-right: 24px !important;padding-bottom: 24px !important;padding-left: 24px !important;}.vc_custom_1519668724214{padding-top: 24px !important;padding-right: 24px !important;padding-bottom: 24px !important;padding-left: 24px !important;}.vc_custom_1518622836719{padding-top: 15px !important;}</style><noscript><style type="text/css"> .wpb_animate_when_almost_visible { opacity: 1; }</style></noscript></head>
+
+<body class="home page-template-default page page-id-2869 custom-background cookies-not-set  notMobile   isDesktop  wpb-js-composer js-comp-ver-5.4.7 vc_responsive" >
+
+
+
+<!--Website Boxed START-->
+<div id="website_boxed">
+
+<!-- Fixed Header -->
+
+
+<div id="hgr_top_navbar_container" class="hgr_fixed_header hgr_navbar ">
+	 <div class="container">     
+    <div class="hgr_identity">
+    	<a href="https://codepilot.ai/" title="CodePilot.ai">
+    					<img src="https://codepilot.ai/wp-content/uploads/2018/02/codepilot-logo-header.svg" width="0" height="0" alt="CodePilot.ai" class="logo" />
+			              <div class="logo-title">CodePilot.ai</div>
+    	</a>
+    </div>
+    
+    <div id="hgr_top_navbar_extras">
+    	
+		        
+         
+        <a class="cd-primary-nav-trigger" href="#0"><i class="icon fa fa-bars"></i></a>  
+    </div>
+    
+	<div id="main_navbar_container" class="main_navbar_container"><ul id="main_navbar" class="main_navbar"><li id="menu-item-3434" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3434"><a title="About" href="https://codepilot.ai/about/" class="first_level_menu_link">About</a></li>
+<li id="menu-item-3435" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3435"><a title="Release Notes" href="https://codepilot.ai/release-notes/" class="first_level_menu_link">Release Notes</a></li>
+<li id="menu-item-3757" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3757"><a title="Blog" href="http://CodePilot.ai/blog" class="first_level_menu_link">Blog</a></li>
+</ul></div>    
+    <nav class="menu-header-container"><ul id="mainNavUl" class="cd-primary-nav"> <li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3434"><a title="About" href="https://codepilot.ai/about/" class="first_level_menu_link">About</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3435"><a title="Release Notes" href="https://codepilot.ai/release-notes/" class="first_level_menu_link">Release Notes</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-3757"><a title="Blog" href="http://CodePilot.ai/blog" class="first_level_menu_link">Blog</a></li>
+</ul></nav>    
+     </div> <!--.container--> </div> <!-- #hgr_top_navbar_container -->
+
+<div id="megamenus_wrapper">
+	
+<div class="clearfix"></div>
+</div>
+    
+  
+
+<!--/ header --> 
+
+<div class="header_spacer"></div>
+
+<div class="top">
+	<a href="#" class="back-to-top"><i class="icon fa fa-chevron-up"></i></a>
+</div>
+
+
+
+<!-- Sections Start -->
+<div id="hgr_sections">
+
+<!-- Site home page -->
+
+
+ 
+   
+  
+ <div id="home" class="pagesection row  "  style="      ">
+  <div class="vc_col-md-12"  >
+    <div class="container">
+      <div class="slideContent gu12">
+        <div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1519664808112 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 vc_col-xs-12"><div class="vc_column-inner "><div class="wpb_wrapper"><h1 style="font-size: 36px;color: #ffffff;line-height: 1.4em;text-align: left" class="vc_custom_heading vc_custom_1525880630184" >A Free Code Search tool for software developers - unlock a world of code.</h1>
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1519690845637" id="download">
+		<div class="wpb_wrapper">
+			<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1518022071863 vc_row-o-equal-height vc_row-flex">
+  <div class="wpb_column vc_column_container vc_col-sm-12">
+    <div class="vc_column-inner vc_custom_1518021987487">
+      <div class="wpb_wrapper">
+        <div class="vc_btn3-container vc_btn3-inline vc_custom_1518648388226">
+          <a class="vc_general vc_btn3 vc_btn3-size-md vc_btn3-shape-rounded vc_btn3-style-flat vc_btn3-color-warning">GET CODEPILOT.AI</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+		</div>
+	</div>
+<p style="font-size: 18px;color: #ffffff;line-height: 1.4em;text-align: left" class="vc_custom_heading vc_custom_1528224967922" >Deliverable email address required for activation.</p><div id="getcodepilot" class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1519243379422 vc_row-has-fill"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1518801135065"><div class="wpb_wrapper">
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html" >
+		<div class="wpb_wrapper">
+			<div class="arrow-up"></div>
+		</div>
+	</div>
+
+	<div class="wpb_raw_code wpb_content_element wpb_raw_html vc_custom_1519245088511" >
+		<div class="wpb_wrapper">
+			<ul class="tabs">
+  <li class="tab-link current MacOS" data-tab="tab-1">
+    <span class="vc_icon_element-icon fa fa-apple"></span><br /> OS 10.9+
+  </li>
+  <li class="tab-link Windows" data-tab="tab-1">
+    <span class="vc_icon_element-icon fa fa-windows Windows"></span><br /> Win10
+  </li>
+  <li class="tab-link Linux" data-tab="tab-1">
+    <span class="vc_icon_element-icon fa fa-linux Linux"></span><br /> Linux
+  </li>
+</ul>
+
+<div class="tabs-cont container">
+  <div id="tab-1" class="tab-content current MacOS Windows Linux">
+    <h2>Download CodePilot.ai</h2>
+    <p>Before you download CodePilot, please enter your email address and accept our policy statements.</p>
+<div id="downloads" style="display: none;">
+<h3>Starting Download ... </h3>
+<p>In case the download doesn't start automatically. Right click <a href="#" name="CodePilot.ai" id="download_link" target="_blank">here</a> and select "Save target as"</p>
+</div>
+    <div id="mauticform_wrapper_acceptlicense" class="mauticform_wrapper">
+      <form class="fomo_instant" autocomplete="false" role="form" method="post" action="https://mautic.codepilot.ai/form/submit?formId=33" id="mauticform_acceptlicense" data-mautic-form="acceptlicense">
+        <div class="mauticform-error" id="mauticform_acceptlicense_error"></div>
+        <div class="mauticform-message" style="display:none;" id="mauticform_acceptlicense_message"></div>
+        <div class="mauticform-innerform">
+
+
+          <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1">
+
+            <div id="mauticform_acceptlicense_email" data-validate="email" data-validation-type="email" class="mauticform-row mauticform-email mauticform-field-1 mauticform-required">
+              <input id="mauticform_input_acceptlicense_email" name="mauticform[email]" value="" placeholder="Email" class="mauticform-input" type="email" />
+              <div class="mauticform-errormsg" style="padding:0;margin:-10px 0 5px 0;font-size:10px;color:red;display: none;">This is required.</div>
+            </div>
+
+            <div id="mauticform_acceptlicense_accept_license" data-validate="accept_license" data-validation-type="checkboxgrp" class="mauticform-row mauticform-checkboxgrp mauticform-field-2 mauticform-required">
+              <div class="mauticform-checkboxgrp-row">
+                <label id="mauticform_checkboxgrp_label_accept_license_Agree0" for="mauticform_checkboxgrp_checkbox_accept_license_Agree0" class="mauticform-checkboxgrp-label">
+                        <input  class="mauticform-checkboxgrp-checkbox" name="mauticform[accept_license][]" id="mauticform_checkboxgrp_checkbox_accept_license_Agree0" type="checkbox" value="Agree" />
+                        I agree to the <a href="/terms/">Terms</a> and <a href="/terms/#privacy">Privacy</a> policy.
+                </label>
+              </div>
+              <div class="mauticform-errormsg" style="padding:0;margin:0 0 -5px 0;font-size:10px;color:red;display: none;">You must accept the License.</div>
+            </div>
+
+            <div id="mauticform_acceptlicense_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-3">
+              <p class="keepitsafe">Keep it secret, Keep it safe.</p>
+              <button type="submit" name="mauticform[submit]" id="mauticform_input_acceptlicense_submit" name="mauticform[submit]" value="" class="mauticform-button btn btn-default" value="1">Download</button>
+            </div>
+          </div>
+        </div>
+
+        <input type="hidden" name="mauticform[formId]" id="mauticform_acceptlicense_id" value="33" />
+        <input type="hidden" name="mauticform[return]" id="mauticform_acceptlicense_return" value="" />
+        <input type="hidden" name="mauticform[formName]" id="mauticform_acceptlicense_name" value="acceptlicense" />
+
+      </form>
+    </div>
+  </div>
+</div>
+		</div>
+	</div>
+</div></div></div></div></div></div></div><div class="screeny wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 vc_col-xs-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center  wpb_animate_when_almost_visible wpb_bounceIn bounceIn  screenshot">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="805" height="605" src="https://codepilot.ai/wp-content/uploads/2018/02/CodePilotRGB.png" class="vc_single_image-img attachment-full" alt="Desktop application for code search" srcset="https://codepilot.ai/wp-content/uploads/2018/02/CodePilotRGB.png 805w, https://codepilot.ai/wp-content/uploads/2018/02/CodePilotRGB-300x225.png 300w, https://codepilot.ai/wp-content/uploads/2018/02/CodePilotRGB-768x577.png 768w" sizes="(max-width: 805px) 100vw, 805px" /></div>
+		</figure>
+	</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1518471068265"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-md-offset-0 vc_col-sm-offset-0 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  vc_custom_1518809188062" >
+		<div class="wpb_wrapper">
+			<h2 style="text-align: center;">Code search that keeps you coding</h2>
+<h3 style="text-align: center;"><span style="font-weight: 400;">With CodePilot.ai, the answers are at your fingertips. Get quick, easy access to the code, issues, errors, and learning you need.</span></h3>
+
+		</div>
+	</div>
+</div></div></div></div><div class="vc_row wpb_row vc_row-fluid three-box-top vc_row-o-equal-height vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid three-box-top vc_custom_1519669602272 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-top vc_row-flex"><div class="box-shadow box1 wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1517946483062">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="60" height="60" src="https://codepilot.ai/wp-content/uploads/2018/02/Icon-Code.png" class="vc_single_image-img attachment-full" alt="" /></div>
+		</figure>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element  vc_custom_1518037470347" >
+		<div class="wpb_wrapper">
+			<p><strong>Code</strong></p>
+<p><span style="font-weight: 400;">Keep making progress: find the code you need with ease.</span></p>
+
+		</div>
+	</div>
+</div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1519669609232 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-top vc_row-flex"><div class="box-shadow box2 wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1517946471157">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="60" height="60" src="https://codepilot.ai/wp-content/uploads/2018/02/Icon-Learn.png" class="vc_single_image-img attachment-full" alt="" /></div>
+		</figure>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element  vc_custom_1518037442820" >
+		<div class="wpb_wrapper">
+			<p><b>Learn</b></p>
+<p><span style="font-weight: 400;">Never stop learning. Teach yourself something new with CodePilot.ai.</span></p>
+
+		</div>
+	</div>
+</div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1519670791945 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-top vc_row-flex"><div class="box-shadow wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner vc_custom_1519670843368"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_left  vc_custom_1517946550658">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="60" height="60" src="https://codepilot.ai/wp-content/uploads/2018/02/Icon-Identify.png" class="vc_single_image-img attachment-full" alt="" /></div>
+		</figure>
+	</div>
+
+	<div class="wpb_text_column wpb_content_element  vc_custom_1519244191976" >
+		<div class="wpb_wrapper">
+			<p><strong>Solve</strong></p>
+<p><span style="font-weight: 400;">Error message got you down? Show it that you’re unstoppable: find your solution.</span></p>
+
+		</div>
+	</div>
+</div></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"></div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid one-search vc_custom_1519671253557 vc_row-has-fill vc_row-o-equal-height vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-8 vc_hidden-md vc_col-sm-offset-0 vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner vc_custom_1519671286047"><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  vc_custom_1525879984730" >
+		<div class="wpb_wrapper">
+			<h2><span style="font-weight: 400;"><strong>One search to bring them all</strong> </span></h2>
+<p><span style="font-weight: 400;">Wherever it’s hiding, the code you need is just a quick search away. Find answers to your coding questions with CodePilot.ai, which gathers results from your local folders, GitHub, and Stack Overflow, all in the same place. You may also add Custom Sources for sites and resources you find valuable and include them in your results.  Toggle, expand or collapse, and filter search results to your heart’s content, thanks to an easy-to-navigate interface. Get better results &#8212; no browser tabs needed.  </span></p>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4 vc_hidden-md vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1519671322228">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="265" height="255" src="https://codepilot.ai/wp-content/uploads/2018/02/Illustration_Search_desktop.png" class="vc_single_image-img attachment-full" alt="" /></div>
+		</figure>
+	</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid one-search vc_custom_1519670724307 vc_row-has-fill vc_row-o-equal-height vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-8 vc_hidden-lg vc_col-md-12 vc_col-sm-offset-0 vc_col-xs-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center  vc_custom_1519671360163">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="265" height="255" src="https://codepilot.ai/wp-content/uploads/2018/02/Illustration_Search_desktop.png" class="vc_single_image-img attachment-full" alt="" /></div>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_hidden-lg vc_col-md-12 vc_col-xs-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  vc_custom_1518464980716" >
+		<div class="wpb_wrapper">
+			<h2><span style="font-weight: 400;"><strong>One search to bring them all</strong> </span></h2>
+<p><span style="font-weight: 400;">Wherever it’s hiding, the code you need is just a quick search away. Find answers to your coding questions with CodePilot.ai, which gathers results from your local folders, GitHub, and Stack Overflow, all in the same place. Toggle, expand or collapse, and filter search results to your heart’s content, thanks to an easy-to-navigate interface. Get better results &#8212; no browser tabs needed.  </span></p>
+
+		</div>
+	</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1518020567921 vc_row-o-equal-height vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-3 vc_hidden-lg vc_col-md-12 vc_col-xs-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="254" height="325" src="https://codepilot.ai/wp-content/uploads/2018/02/Illustration_Filter_desktop.png" class="vc_single_image-img attachment-full" alt="" srcset="https://codepilot.ai/wp-content/uploads/2018/02/Illustration_Filter_desktop.png 254w, https://codepilot.ai/wp-content/uploads/2018/02/Illustration_Filter_desktop-234x300.png 234w" sizes="(max-width: 254px) 100vw, 254px" /></div>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-9 vc_hidden-lg vc_col-md-12 vc_col-xs-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  vc_custom_1518037311131" >
+		<div class="wpb_wrapper">
+			<h2>Seek precisely as you want</h2>
+<p><span style="font-weight: 400;">Streamline your quest by including or excluding terms, using “AND” and “OR” searches, and specifying whether you want only exact matches. Want to take it even further? You can eliminate GitHub, Stack Overflow, or local search results, and you can choose whether to search GitHub Code, GitHub Commits, or GitHub Issues… or a combination of all three.</span></p>
+
+		</div>
+	</div>
+</div></div></div></div><div class="vc_row wpb_row vc_row-fluid vc_custom_1518020567921 vc_row-o-equal-height vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-3 vc_hidden-md vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="254" height="325" src="https://codepilot.ai/wp-content/uploads/2018/02/Illustration_Filter_desktop.png" class="vc_single_image-img attachment-full" alt="" srcset="https://codepilot.ai/wp-content/uploads/2018/02/Illustration_Filter_desktop.png 254w, https://codepilot.ai/wp-content/uploads/2018/02/Illustration_Filter_desktop-234x300.png 234w" sizes="(max-width: 254px) 100vw, 254px" /></div>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-9 vc_hidden-md vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  vc_custom_1518037311131" >
+		<div class="wpb_wrapper">
+			<h2>Seek precisely as you want</h2>
+<p><span style="font-weight: 400;">Streamline your quest by including or excluding terms, using “AND” and “OR” searches, and specifying whether you want only exact matches. Want to take it even further? You can eliminate GitHub, Stack Overflow, or local search results, and you can choose whether to search GitHub Code, GitHub Commits, or GitHub Issues… or a combination of all three.</span></p>
+
+		</div>
+	</div>
+</div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1517947553663 vc_row-has-fill vc_row-o-equal-height vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-8 vc_col-md-12 vc_hidden-md vc_hidden-sm vc_col-xs-12 vc_hidden-xs"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<h2>How to solve this&#8230; ooh, a kitty!</h2>
+<p><span style="font-weight: 400;">We know all too well that it’s easy to get sidetracked when you have a million tabs open or when you try to look something up and start going down the rabbit hole that is the internet. Luckily, CodePilot.ai is designed to keep you in the zone, helping you ditch the browser tabs and avoid distractions so that you can focus on what really matters: your project. (But if you want to send us hilarious cat videos, we’re listening&#8230;)</span></p>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_col-md-12 vc_hidden-md vc_hidden-sm vc_col-xs-12 vc_hidden-xs"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="300" height="286" src="https://codepilot.ai/wp-content/uploads/2018/02/Illustration_Butterfly_desktop.png" class="vc_single_image-img attachment-full" alt="" /></div>
+		</figure>
+	</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1517947553663 vc_row-has-fill vc_row-o-equal-height vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-8 vc_hidden-lg vc_col-md-12 vc_col-xs-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="300" height="286" src="https://codepilot.ai/wp-content/uploads/2018/02/Illustration_Butterfly_desktop.png" class="vc_single_image-img attachment-full" alt="" /></div>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-4 vc_hidden-lg vc_col-md-12 vc_col-xs-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<h2>How to solve this&#8230; ooh, a kitty!</h2>
+<p><span style="font-weight: 400;">We know all too well that it’s easy to get sidetracked when you have a million tabs open or when you try to look something up and start going down the rabbit hole that is the internet. Luckily, CodePilot.ai is designed to keep you in the zone, helping you ditch the browser tabs and avoid distractions so that you can focus on what really matters: your project. (But if you want to send us hilarious cat videos, we’re listening&#8230;)</span></p>
+
+		</div>
+	</div>
+</div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div id="comingsoon" class="vc_row wpb_row vc_row-fluid vc_custom_1518031897543 vc_row-o-equal-height vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-3 vc_col-md-12 vc_col-xs-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img width="230" height="230" src="https://codepilot.ai/wp-content/uploads/2018/02/Illustration_You_desktop.png" class="vc_single_image-img attachment-full" alt="" srcset="https://codepilot.ai/wp-content/uploads/2018/02/Illustration_You_desktop.png 230w, https://codepilot.ai/wp-content/uploads/2018/02/Illustration_You_desktop-150x150.png 150w" sizes="(max-width: 230px) 100vw, 230px" /></div>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-9 vc_col-md-12 vc_col-xs-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<h2><strong>Smarter results tailored to you</strong></h2>
+<p><span style="font-weight: 400;">Code faster with smarter answers. Machine Learning will soon bring you more relevant results, as CodePilot.ai learns what you need based on what you search for. The future is here &#8212; and it’s awesome!     </span></p>
+
+		</div>
+	</div>
+</div></div></div></div><div data-vc-full-width="true" data-vc-full-width-init="false" data-vc-stretch-content="true" class="vc_row wpb_row vc_row-fluid vc_row-no-padding"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_separator wpb_content_element vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center vc_separator_no_text vc_sep_color_grey" ><span class="vc_sep_holder vc_sep_holder_l"><span  class="vc_sep_line"></span></span><span class="vc_sep_holder vc_sep_holder_r"><span  class="vc_sep_line"></span></span>
+</div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid bottom-backgrounds vc_custom_1519666450427 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-bottom vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element  vc_custom_1518022050424 small-print" >
+		<div class="wpb_wrapper">
+			<p style="text-align: center;"><span style="color: #ffffff;">Windows | Linux</span></p>
+
+		</div>
+	</div>
+<div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1518025067374 vc_column-gap-30 vc_row-o-equal-height vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 vc_col-xs-12"><div class="vc_column-inner vc_custom_1519668743252"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_right  vc_custom_1518622836719">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<a href="https://www.ca.com/us/company/innovation/ca-accelerator.html" target="_blank" class="vc_single_image-wrapper   vc_box_border_grey"><img width="1283" height="389" src="https://codepilot.ai/wp-content/uploads/2018/02/CA_accel_17blk-01.png" class="vc_single_image-img attachment-full" alt="" srcset="https://codepilot.ai/wp-content/uploads/2018/02/CA_accel_17blk-01.png 1283w, https://codepilot.ai/wp-content/uploads/2018/02/CA_accel_17blk-01-300x91.png 300w, https://codepilot.ai/wp-content/uploads/2018/02/CA_accel_17blk-01-768x233.png 768w, https://codepilot.ai/wp-content/uploads/2018/02/CA_accel_17blk-01-1024x310.png 1024w" sizes="(max-width: 1283px) 100vw, 1283px" /></a>
+		</figure>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-6 vc_col-md-12 vc_col-xs-12"><div class="vc_column-inner vc_custom_1519668724214"><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_left">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<a href="https://www.startupschool.org/" target="_blank" class="vc_single_image-wrapper   vc_box_border_grey"><img width="2835" height="1180" src="https://codepilot.ai/wp-content/uploads/2018/02/SSYC_Logo.png" class="vc_single_image-img attachment-full" alt="" srcset="https://codepilot.ai/wp-content/uploads/2018/02/SSYC_Logo.png 2835w, https://codepilot.ai/wp-content/uploads/2018/02/SSYC_Logo-300x125.png 300w, https://codepilot.ai/wp-content/uploads/2018/02/SSYC_Logo-768x320.png 768w, https://codepilot.ai/wp-content/uploads/2018/02/SSYC_Logo-1024x426.png 1024w" sizes="(max-width: 2835px) 100vw, 2835px" /></a>
+		</figure>
+	</div>
+</div></div></div></div><div class="vc_row wpb_row vc_inner vc_row-fluid footer-getpilot vc_custom_1518023451359 vc_row-o-equal-height vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-12 vc_col-lg-8 vc_col-md-12 vc_col-sm-offset-0 vc_col-xs-12"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div class="wpb_text_column wpb_content_element " >
+		<div class="wpb_wrapper">
+			<h1><span style="color: #ffffff;">Practical solutions from developers like you.</span></h1>
+
+		</div>
+	</div>
+</div></div></div><div class="wpb_column vc_column_container vc_col-sm-4 vc_hidden-md vc_hidden-xs"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_btn3-container  wpb_animate_when_almost_visible wpb_rollIn rollIn vc_btn3-inline" >
+	<a class="vc_general vc_btn3 vc_btn3-size-lg vc_btn3-shape-rounded vc_btn3-style-3d vc_btn3-color-orange" href="https://codepilot.ai/get-codepilot-ai/" title="">Get CodePilot.ai</a></div>
+</div></div></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div>
+      </div>
+    </div>
+  </div>
+  <div class="clearfix"></div>
+</div>
+
+
+
+
+
+
+<div class="clearfix"></div>
+</div> <!--Sections END-->
+
+<div class="container hgr_megafooter"><div id="footer" data-vc-full-width="true" data-vc-full-width-init="false" class="vc_row wpb_row vc_row-fluid vc_custom_1520538733816 vc_row-has-fill vc_row-o-equal-height vc_row-o-content-middle vc_row-flex"><div class="wpb_column vc_column_container vc_col-sm-3"><div class="vc_column-inner "><div class="wpb_wrapper">
+	<div  class="wpb_single_image wpb_content_element vc_align_center">
+		
+		<figure class="wpb_wrapper vc_figure">
+			<div class="vc_single_image-wrapper   vc_box_border_grey"><img class="vc_single_image-img " src="https://codepilot.ai/wp-content/uploads/2018/02/codepilot-logo-footer.svg" width="" height="" alt="codepilot-logo-footer" title="codepilot-logo-footer" /></div>
+		</figure>
+	</div>
+<h2 style="color: #ffffff;text-align: center" class="vc_custom_heading vc_custom_1519675540038" >CodePilot.ai</h2></div></div></div><div class="wpb_column vc_column_container vc_col-sm-8 vc_col-lg-offset-0 vc_col-lg-9 vc_col-md-offset-1 vc_col-md-7 vc_col-xs-offset-1 vc_col-xs-7"><div class="vc_column-inner "><div class="wpb_wrapper"><div class="vc_row wpb_row vc_inner vc_row-fluid vc_custom_1519664740947"><div class="wpb_column vc_column_container vc_col-sm-2 vc_hidden-md vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner "><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-2 vc_hidden-md vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner "><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-2 vc_hidden-md vc_hidden-sm vc_hidden-xs"><div class="vc_column-inner vc_custom_1519669127411"><div class="wpb_wrapper"></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3 vc_col-lg-2"><div class="vc_column-inner vc_custom_1519669178459"><div class="wpb_wrapper"><div  class="vc_wp_custommenu wpb_content_element"><div class="widget widget_nav_menu"><div class="menu-footer-container"><ul id="menu-footer" class="menu"><li id="menu-item-3077" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3077"><a href="https://codepilot.ai/terms/">Terms</a></li>
+</ul></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-3 vc_col-lg-2"><div class="vc_column-inner vc_custom_1519669170874"><div class="wpb_wrapper"><div  class="vc_wp_custommenu wpb_content_element"><div class="widget widget_nav_menu"><div class="menu-footer2-container"><ul id="menu-footer2" class="menu"><li id="menu-item-3079" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3079"><a href="https://codepilot.ai/about/">About</a></li>
+</ul></div></div></div></div></div></div><div class="wpb_column vc_column_container vc_col-sm-4 vc_col-lg-2 vc_col-md-3 vc_col-xs-3"><div class="vc_column-inner vc_custom_1529004354066"><div class="wpb_wrapper"><div  class="vc_wp_custommenu wpb_content_element"><div class="widget widget_nav_menu"><div class="menu-footer3-container"><ul id="menu-footer3" class="menu"><li id="menu-item-3080" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-3080"><a href="https://codepilot.ai/release-notes/">Release Notes</a></li>
+</ul></div></div></div></div></div></div></div></div></div></div></div><div class="vc_row-full-width vc_clearfix"></div><div class="clearfix"></div></div>
+<div id="hgr_left"></div>
+<div id="hgr_right"></div>
+<div id="hgr_top"></div>
+<div id="hgr_bottom"></div>
+
+
+
+
+</div> <!--Website Boxed END-->
+
+	<script type='text/javascript'>function ctSetCookie(c_name, value, def_value){document.cookie = c_name + '=' + escape(value) + '; path=/';}ctSetCookie('ct_checkjs', '1083031121', '0');</script><div id="fssearch_container" class="hidden"><a class="close-btn" href="#0">Close</a><span class="fssearch_tip">Type and hit enter</span><form role="search" method="get" id="searchform" class="searchform" action="https://codepilot.ai/">
+					<div>
+						<input type="text" value="" name="s" id="s" class="fssearch_input" autocomplete="off" spellcheck="false" />
+						
+						<input type="submit" id="searchsubmit" value="Search" class="fssearch_submit" />
+					</div>
+				</form></div><!-- fssearch_container END --><link rel='stylesheet' id='animate-css-css'  href='https://codepilot.ai/wp-content/plugins/js_composer/assets/lib/bower/animate-css/animate.min.css' type='text/css' media='all' />
+<script type='text/javascript' src='https://codepilot.ai/wp-content/plugins/cleantalk-spam-protect/js/apbct-public.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var ctNocache = {"ajaxurl":"https:\/\/codepilot.ai\/wp-admin\/admin-ajax.php","info_flag":"","set_cookies_flag":"1","blog_home":"https:\/\/codepilot.ai\/"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/plugins/cleantalk-spam-protect/inc/cleantalk_nocache.js'></script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/plugins/cleantalk-spam-protect/js/cleantalk_external.js'></script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/plugins/cleantalk-spam-protect/js/cleantalk_internal.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/codepilot.ai\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"recaptcha":{"messages":{"empty":"Please verify that you are not a robot."}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/plugins/contact-form-7/includes/js/scripts.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var cnArgs = {"ajaxurl":"https:\/\/codepilot.ai\/wp-admin\/admin-ajax.php","hideEffect":"slide","onScroll":"no","onScrollOffset":"100","cookieName":"cookie_notice_accepted","cookieValue":"true","cookieTime":"2592000","cookiePath":"\/","cookieDomain":"","redirection":"","cache":"","refuse":"no","revoke_cookies":"0","revoke_cookies_opt":"automatic","secure":"1"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/plugins/cookie-notice/js/front.min.js'></script>
+<script type='text/javascript' src='https://codepilot.ai/wp-includes/js/imagesloaded.min.js'></script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/plugins/js_composer/assets/lib/bower/isotope/dist/isotope.pkgd.min.js'></script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/plugins/js_composer/assets/lib/waypoints/waypoints.min.js'></script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/themes/stash/highgrade/js/lity.min.js'></script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/themes/stash/highgrade/js/jquery.animate-colors-min.js'></script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/themes/stash/highgrade/js/velocity.min.js'></script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/themes/stash/highgrade/js/smoothscroll.js'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var php_variables = {"home_url":"https:\/\/codepilot.ai\/","template_directory_uri":"https:\/\/codepilot.ai\/wp-content\/themes\/stash","retina_logo_url":"https:\/\/codepilot.ai\/wp-content\/uploads\/2018\/02\/codepilot-logo-header.svg","menu_style":"1","is_front_page":"true","static_mega_footer":"false","metro_asprect_ratio":"4x3"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/themes/stash/highgrade/js/app.js'></script>
+<script type='text/javascript'>
+jQuery('.custom-html-widget ul li a').click(function(e) {
+  jQuery('.custom-html-widget ul li a').removeClass('selected');
+  jQuery(this).addClass('selected');
+});
+
+
+
+// show download box
+//function downloadCodePilot() {
+//    //jQuery("#")[0].innerHTML = `<ul class="tabs"> <li class="tab-link current MacOS" data-tab="tab-1"> <span class="vc_icon_element-icon fa fa-apple"></span><br/> OS 10.9+ </li><li class="tab-link Windows" data-tab="tab-1"> <span class="vc_icon_element-icon fa fa-windows Windows"></span><br/> Win10 </li><li class="tab-link Linux" data-tab="tab-1"> <span class="vc_icon_element-icon fa fa-linux Linux"></span><br/> Linux </li></ul><div class="tabs-cont container"> <div id="tab-1" class="tab-content current MacOS Windows Linux"> <h2>Download CodePilot</h2> <p>Before you download CodePilot, please enter your email address and accept our policy statements.</p><div id="downloads" style="display: none;"><h3>Starting Download ... </h3><p>In case the download doesn't start automatically. Right click <a href="#" name="CodePilot.ai" id="download_link" target="_blank">here</a> and select "Save target as"</p></div><div id="mauticform_wrapper_acceptlicense" class="mauticform_wrapper"> <form class="fomo_instant" autocomplete="false" role="form" method="post" action="https://mautic.codepilot.ai/form/submit?formId=33" id="mauticform_acceptlicense" data-mautic-form="acceptlicense"> <div class="mauticform-error" id="mauticform_acceptlicense_error"></div><div class="mauticform-message" style="display:none;" id="mauticform_acceptlicense_message"></div><div class="mauticform-innerform"> <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1"> <div id="mauticform_acceptlicense_email" data-validate="email" data-validation-type="email" class="mauticform-row mauticform-email mauticform-field-1 mauticform-required"> <input id="mauticform_input_acceptlicense_email" name="mauticform[email]" value="" placeholder="email" class="mauticform-input" type="email"/> <span class="mauticform-errormsg" style="display: none;">This is required.</span> </div><div id="mauticform_acceptlicense_accept_license" data-validate="accept_license" data-validation-type="checkboxgrp" class="mauticform-row mauticform-checkboxgrp mauticform-field-2 mauticform-required"> <div class="mauticform-checkboxgrp-row"> <label id="mauticform_checkboxgrp_label_accept_license_Agree0" for="mauticform_checkboxgrp_checkbox_accept_license_Agree0" class="mauticform-checkboxgrp-label"> <input class="mauticform-checkboxgrp-checkbox" name="mauticform[accept_license][]" id="mauticform_checkboxgrp_checkbox_accept_license_Agree0" type="checkbox" value="Agree"/> I agree to the <a href="/terms/">Terms</a> and <a href="/terms/#privacy">Privacy</a> policy. </label> </div><span class="mauticform-errormsg" style="display: none;">You must accept the License.</span> </div><div id="mauticform_acceptlicense_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-3"> <button type="submit" name="mauticform[submit]" id="mauticform_input_acceptlicense_submit" name="mauticform[submit]" value="" class="mauticform-button btn btn-default" value="1">Download</button> </div></div></div><input type="hidden" name="mauticform[formId]" id="mauticform_acceptlicense_id" value="33"/> <input type="hidden" name="mauticform[return]" id="mauticform_acceptlicense_return" value=""/> <input type="hidden" name="mauticform[formName]" id="mauticform_acceptlicense_name" value="acceptlicense"/> </form> </div></div></div>`;
+//    jQuery("#getcodepilot").toggle("slow");
+//}
+
+jQuery("#getCodePilotBottom").click(function() {
+    // jQuery("#FormBottom")[0].innerHTML = `<ul class="tabs"> <li class="tab-link current MacOS" data-tab="tab-1"> <span class="vc_icon_element-icon fa fa-apple"></span><br/> OS 10.9+ </li><li class="tab-link Windows" data-tab="tab-1"> <span class="vc_icon_element-icon fa fa-windows Windows"></span><br/> Win10 </li><li class="tab-link Linux" data-tab="tab-1"> <span class="vc_icon_element-icon fa fa-linux Linux"></span><br/> Linux </li></ul><div class="tabs-cont container"> <div id="tab-1" class="tab-content current MacOS Windows Linux"> <h2>Download CodePilot</h2> <p>Before you download CodePilot, please enter your email address and accept our policy statements.</p><div id="downloads" style="display: none;"><h3>Starting Download ... </h3><p>In case the download doesn't start automatically. Right click <a href="#" name="CodePilot.ai" id="download_link" target="_blank">here</a> and select "Save target as"</p></div><div id="mauticform_wrapper_acceptlicense" class="mauticform_wrapper"> <form class="fomo_instant" autocomplete="false" role="form" method="post" action="https://mautic.codepilot.ai/form/submit?formId=33" id="mauticform_acceptlicense" data-mautic-form="acceptlicense"> <div class="mauticform-error" id="mauticform_acceptlicense_error"></div><div class="mauticform-message" style="display:none;" id="mauticform_acceptlicense_message"></div><div class="mauticform-innerform"> <div class="mauticform-page-wrapper mauticform-page-1" data-mautic-form-page="1"> <div id="mauticform_acceptlicense_email" data-validate="email" data-validation-type="email" class="mauticform-row mauticform-email mauticform-field-1 mauticform-required"> <input id="mauticform_input_acceptlicense_email" name="mauticform[email]" value="" placeholder="email" class="mauticform-input" type="email"/> <span class="mauticform-errormsg" style="display: none;">This is required.</span> </div><div id="mauticform_acceptlicense_accept_license" data-validate="accept_license" data-validation-type="checkboxgrp" class="mauticform-row mauticform-checkboxgrp mauticform-field-2 mauticform-required"> <div class="mauticform-checkboxgrp-row"> <label id="mauticform_checkboxgrp_label_accept_license_Agree0" for="mauticform_checkboxgrp_checkbox_accept_license_Agree0" class="mauticform-checkboxgrp-label"> <input class="mauticform-checkboxgrp-checkbox" name="mauticform[accept_license][]" id="mauticform_checkboxgrp_checkbox_accept_license_Agree0" type="checkbox" value="Agree"/> I agree to the <a href="/terms/">Terms</a> and <a href="/terms/#privacy">Privacy</a> policy. </label> </div><span class="mauticform-errormsg" style="display: none;">You must accept the License.</span> </div><div id="mauticform_acceptlicense_submit" class="mauticform-row mauticform-button-wrapper mauticform-field-3"> <button type="submit" name="mauticform[submit]" id="mauticform_input_acceptlicense_submit" name="mauticform[submit]" value="" class="mauticform-button btn btn-default" value="1">Download</button> </div></div></div><input type="hidden" name="mauticform[formId]" id="mauticform_acceptlicense_id" value="33"/> <input type="hidden" name="mauticform[return]" id="mauticform_acceptlicense_return" value=""/> <input type="hidden" name="mauticform[formName]" id="mauticform_acceptlicense_name" value="acceptlicense"/> </form> </div></div></div>`;
+    jQuery("#FormBottom").toggle("slow");
+});
+
+jQuery('#download').on('click', function(){
+  jQuery('#getcodepilot').toggleClass('active');
+  return false;
+});
+
+// copy to clipboard
+if (document.getElementById("copyButton")) {
+  document.getElementById("copyButton").addEventListener("click", function() {
+    copyToClipboardMsg(document.getElementById("copyTarget"), "msg");
+  });
+}
+
+function copyToClipboardMsg(elem, msgElem) {
+  var succeed = copyToClipboard(elem);
+  var msg;
+  if (!succeed) {
+    msg = "Copy not supported or blocked."
+  } else {
+    msg = "Copied to the clipboard!"
+  }
+  if (typeof msgElem === "string") {
+    msgElem = document.getElementById(msgElem);
+  }
+  msgElem.innerHTML = msg;
+  setTimeout(function() {
+    msgElem.innerHTML = "";
+  }, 2000);
+}
+
+function copyToClipboard(elem) {
+  // create hidden text element, if it doesn't already exist
+  var targetId = "_hiddenCopyText_";
+  var isInput = elem.tagName === "INPUT" || elem.tagName === "TEXTAREA";
+  var origSelectionStart, origSelectionEnd;
+  if (isInput) {
+    // can just use the original source element for the selection and copy
+    target = elem;
+    origSelectionStart = elem.selectionStart;
+    origSelectionEnd = elem.selectionEnd;
+  } else {
+    // must use a temporary form element for the selection and copy
+    target = document.getElementById(targetId);
+    if (!target) {
+      var target = document.createElement("textarea");
+      target.style.position = "absolute";
+      target.style.left = "-9999px";
+      target.style.top = "0";
+      target.id = targetId;
+      document.body.appendChild(target);
+    }
+    target.textContent = elem.textContent;
+  }
+  // select the content
+  var currentFocus = document.activeElement;
+  target.focus();
+  target.setSelectionRange(0, target.value.length);
+
+  // copy the selection
+  var succeed;
+  try {
+    succeed = document.execCommand("copy");
+  } catch (e) {
+    succeed = false;
+  }
+  // restore original focus
+  if (currentFocus && typeof currentFocus.focus === "function") {
+    currentFocus.focus();
+  }
+
+  if (isInput) {
+    // restore prior selection
+    elem.setSelectionRange(origSelectionStart, origSelectionEnd);
+  } else {
+    // clear temporary content
+    target.textContent = "";
+  }
+  return succeed;
+}
+
+var selectedOS = detectOS();
+
+// OS tabs
+jQuery('ul.tabs li').click(function() {
+  var tab_id = jQuery(this).attr('data-tab');
+
+  jQuery('ul.tabs li').removeClass('current');
+  jQuery('.tab-content').removeClass('current');
+
+  jQuery(this).addClass('current');
+  jQuery("#" + tab_id).addClass('current');
+  
+  if(jQuery(this)[0].className.indexOf('MacOS') > -1) {
+      selectedOS = 'MacOS'
+  }
+  if(jQuery(this)[0].className.indexOf('Windows') > -1) {
+      selectedOS = 'Windows'
+  }
+  if(jQuery(this)[0].className.indexOf('Linux') > -1) {
+      selectedOS = 'Linux'
+  }
+  sessionStorage.setItem('selectedOS', selectedOS);
+});
+
+
+// find out os
+jQuery(document).ready(function() {
+  var OSName = detectOS()
+  if (OSName == "Windows") {
+    jQuery('ul.tabs li').removeClass('current');
+    jQuery('.tab-content').removeClass('current');
+    jQuery('ul.tabs li.Windows').addClass("current");
+    jQuery('.tab-content.Windows').addClass('current');
+  }
+  if (OSName == "Linux") {
+    jQuery('ul.tabs li').removeClass('current');
+    jQuery('.tab-content').removeClass('current');
+    jQuery('ul.tabs li.Linux').addClass("current");
+    jQuery('.tab-content.Linux').addClass('current');
+  }
+
+});
+
+jQuery('#downloadLink').click(function(){
+    beginDownload();
+})
+
+function setSHA() {
+    var selectedOS = sessionStorage.getItem('selectedOS') ? sessionStorage.getItem('selectedOS') : detectOS();
+    var sha = ''
+    if(selectedOS === 'MacOS') {
+        sha = 'b2064623c15cb4ac489ae603f0e0d120aa5f3de6457f5e9fb5eec788f66cc1d6'
+    }
+    if(selectedOS === 'Windows') {
+        sha = 'c9b137fbd8d986a7eabec3cb24912894aa11666564b745f71081943c59579a86'
+    }
+    if(selectedOS === 'Linux') {
+        sha = '9045fb925550c10c410e10ce80b2880ea38f180b625db9029384447ca45b3db3'
+    }
+    
+    jQuery('#copyTarget')[0].innerHTML = sha
+}
+
+function beginDownload() {
+    var selectedOS = sessionStorage.getItem('selectedOS') ? sessionStorage.getItem('selectedOS') : detectOS();
+    
+    if(selectedOS === 'MacOS') {
+        window.location.href ='https://d3gcsm2x428gz5.cloudfront.net/CodePilot.ai-4.1.1.dmg';
+        __gaTracker('send', 'event', 'Click', 'Download', 'Mac Download');
+        return false;
+    }
+    if(selectedOS === 'Windows') {
+        window.location.href ='https://d3gcsm2x428gz5.cloudfront.net/CodePilot.ai+Setup+4.1.1.exe';
+        __gaTracker('send', 'event', 'Click', 'Download', 'Windows Download');
+        return false;
+    }
+    if(selectedOS === 'Linux') {
+        window.location.href ='https://d3gcsm2x428gz5.cloudfront.net/codepilot-ai-4.1.1-x86_64.AppImage';
+        __gaTracker('send', 'event', 'Click', 'Download', 'Linux Download');
+        return false;
+    }
+}
+
+function detectOS() {
+  var OSName = "MacOS"; //default to MacOS
+  if (navigator.appVersion.indexOf("Win") != -1) OSName = "Windows";
+  if (navigator.appVersion.indexOf("Mac") != -1) OSName = "MacOS";
+  if (navigator.appVersion.indexOf("Linux") != -1) OSName = "Linux";
+  return OSName;
+}
+
+// get user IP and trigger FOMO code on submit
+var ipAddress;
+
+function getIpAddress() {
+   var xhttp = new XMLHttpRequest();
+   xhttp.open("GET", "//freegeoip.net/json/?callback=?", true);
+   xhttp.onreadystatechange = function() {
+    if(xhttp.readyState === XMLHttpRequest.DONE && xhttp.status === 200) {
+       var f = xhttp.responseText.search(/\(/)
+       var l = xhttp.responseText.search(/\)/)
+       data = JSON.parse(xhttp.responseText.slice(f + 1,l));
+       ipAddress = data.ip;
+    }
+  }
+  xhttp.send();
+  console.log('ip: ' + ipAddress);
+  }
+
+  function fetchAndInjectIpAddress() {
+   getIpAddress();
+
+   var ipSetter = setInterval(function() {
+     if (ipAddress && ipAddress.length > 0) {
+     ipAddress
+     clearInterval(ipSetter);
+     }
+     else {
+       console.log('ip not found, retrying.');
+     }
+     }, 1000)
+  }
+
+function goFomo() {
+
+   var email = jQuery('input[name="mauticform[email]"]').val();
+   //this looked like the right element to me, feel free to modify for whatever works :)
+
+   if (!email | !ipAddress) {return;}
+
+   var params = {event: {
+               email_address: email,
+               ip_address: ipAddress,
+               event_type_id: 55184
+               // I added the e.type.id, this corresponds to your User signup template and is necessary to create events
+             }
+           }
+
+   jQuery.ajax({
+   url: 'https://www.usefomo.com/api/v1/applications/me/events',
+   method: 'POST',
+   contentType: 'application/json',
+   headers: {
+       "Authorization": "Token JF_wIiGvMh7_aIFEdHCJXA"
+       //your API token is JF_wIiGvMh7_aIFEdHCJXA, can be found or regenerated within Fomo dashboard
+   },
+   data: JSON.stringify(params),
+   success: function(data) {
+       console.log("id: " + data.id);
+       console.log(data.message);
+     }
+   })
+}
+
+document.addEventListener("DOMContentLoaded", function(event) {
+fetchAndInjectIpAddress();
+});
+
+
+//attach event listener to input
+jQuery('#mauticform_acceptlicense').on('submit', goFomo)
+ jQuery(document).ready(function($) {
+						"use strict";
+						
+						var hasBeenTrigged = false;
+						var header_height = $("#hgr_top_navbar_container").outerHeight(true);
+						$("#megamenus_wrapper").css("top", $("#hgr_top_navbar_container").outerHeight(true));
+						
+						$("#hgr_top_navbar_extras .hgr_woo_minicart, #hgr_top_navbar_extras, #hgr_top_navbar_extras a").height( $("#hgr_top_navbar_container").outerHeight() );
+						$(".fixed_menu_bottom_bar .hgr_woo_minicart").height($( ".fixed_menu_bottom_bar").outerHeight(true) );				
+						$("#hgr_top_navbar_extras a").css( "line-height", $("#hgr_top_navbar_container").outerHeight() + "px" );
+						$(".header_spacer").height( $("#hgr_top_navbar_container").outerHeight() );
+						//$("#hgr_top_navbar_container .dropdown-menu").animate({backgroundColor: "rgba(0,0,0 , 0.6)"}, 500);
+										
+										if ($(window).scrollTop() > 200 ) {
+											$("#hgr_top_navbar_container").animate({backgroundColor: "rgba(0,0,0 , 0.6)"}, 500);
+										}$(".header_spacer").height( $("#hgr_top_navbar_container").outerHeight() );$(window).bind("scroll", function() {
+									
+									if ($(window).scrollTop() > 200 && !hasBeenTrigged ) {
+										$("#hgr_top_navbar_container").animate({backgroundColor: "rgba(0,0,0 , 0.6)"}, 500);
+										hasBeenTrigged = true;
+										
+									}
+									if ($(window).scrollTop() < 200 && hasBeenTrigged ) {
+										$("#hgr_top_navbar_container").animate({backgroundColor: "rgba(0,0,0 , 1)"}, 500);
+										hasBeenTrigged = false;
+										
+									}
+								}); });
+</script>
+<script type='text/javascript' src='https://codepilot.ai/wp-includes/js/wp-embed.min.js'></script>
+<script type='text/javascript' src='https://codepilot.ai/wp-content/plugins/js_composer/assets/js/dist/js_composer_front.min.js'></script>
+
+			<div id="cookie-notice" role="banner" class="cn-bottom wp-default" style="color: #f8fdfa; background-color: #000;"><div class="cookie-notice-container"><span id="cn-notice-text">This site uses cookies. We are not trying to be creepy; we just want to understand how to build a better product and website. If you continue to use this site, we will assume that you are happy with our cookie policy.</span><a href="#" id="cn-accept-cookie" data-cookie-set="accept" class="cn-set-cookie cn-button wp-default button">OK</a><a href="https://codepilot.ai/cookie-policy/" target="_blank" id="cn-more-info" class="cn-more-info cn-button wp-default button">Read more</a>
+				</div>
+				
+			</div>    
+ </body>
+</html>
